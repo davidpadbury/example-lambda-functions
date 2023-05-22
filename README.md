@@ -6,7 +6,7 @@
 
 Returns a list of the most common errors that were recently seen in a CloudWatch Logs Group.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://raw.githubusercontent.com/davidpadbury/example-lambda-functions/main/templates/ops/cloudwatch-recent-errors.yml&stackName=CloudWatchRecentErrors)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/ops/cloudwatch-recent-errors.yml&stackName=CloudWatchRecentErrors)
 
 *Example Payload*:
 
@@ -20,7 +20,7 @@ Returns a list of the most common errors that were recently seen in a CloudWatch
 
 Recents a list of recent changes to CloudFormation stacks.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://raw.githubusercontent.com/davidpadbury/example-lambda-functions/main/templates/ops/cloudformation-recent-changes.yml&stackName=CloudFormationRecentChanges)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/ops/cloudformation-recent-changes.yml&stackName=CloudFormationRecentChanges)
 
 ## Integrations
 
@@ -28,7 +28,7 @@ Recents a list of recent changes to CloudFormation stacks.
 
 Create a JIRA issue with a provided summary and description.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://raw.githubusercontent.com/davidpadbury/example-lambda-functions/main/templates/integrations/jira-create-issue.yml&stackName=JiraCreateIssue)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/jira-create-issue.yml&stackName=JiraCreateIssue)
 
 *Example Payload*:
 
