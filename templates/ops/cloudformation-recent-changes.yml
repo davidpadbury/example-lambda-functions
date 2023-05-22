@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  RecentCloudformationChangesFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: RecentCloudformationChangesFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ReadCloudFormationStacksPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - cloudformation:ListStacks
+                  - cloudformation:DescribeStacks
+                Resource: '*'
+
+  RecentCloudformationChangesFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: RecentCloudFormationChanges
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt RecentCloudformationChangesFunctionRole.Arn
+      Code:
+        ZipFile: |
+          import boto3
+          from datetime import datetime, timedelta, timezone
+
+          def get_recently_updated_stacks(duration_hours):
+            # Create Boto3 CloudFormation client
+            cloudformation_client = boto3.client('cloudformation')
+
+            # Calculate the timestamp based on the duration hours
+            lookback_time = datetime.now(timezone.utc) - timedelta(hours=duration_hours)
+            print(f'Looking from: {lookback_time}')
+
+            # Retrieve all CloudFormation stacks using pagination
+            stacks = []
+            paginator = cloudformation_client.get_paginator('describe_stacks')
+            response_iterator = paginator.paginate()
+
+            for page in response_iterator:
+              for stack in page['Stacks']:
+                times = [
+                  (stack.get('CreationTime'), 'Created'),
+                  (stack.get('DeletionTime'), 'Deleted'),
+                  (stack.get('LastUpdatedTime'), 'Updated')
+                ]
+                print(times)
+                latest_change = max(filter(lambda t: t[0], times))
+                
+                changed_within_lookback = latest_change and latest_change[0] >= lookback_time
+
+                if changed_within_lookback:
+                  stacks.append((latest_change[0], latest_change[1], stack['StackName']))
+
+            # Sort the stacks by last updated time
+            stacks.sort(reverse=True)
+
+            # Format the response as markdown
+            if stacks:
+              response_string = ''
+              for (change_time, change_type, stack_name) in stacks:
+                last_updated_time = change_time.strftime("%Y-%m-%d %H:%M:%S")
+
+                response_string += f'{stack_name} - {change_type} {last_updated_time}\n'
+            else:
+              response_string = f'No stacks were changed in the past (duration hours) hours.'
+
+            return response_string
+
+          def lambda_handler(event, context):
+            duration_hours = int(event.get('hours', 24))
+
+            stacks = get_recently_updated_stacks(duration_hours)
+
+            response = "```\n{}\n```".format(stacks)
+
+            return response

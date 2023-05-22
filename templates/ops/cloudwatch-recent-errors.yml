@@ -1,0 +1,98 @@
+
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  CloudwatchRecentErrorsFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: CloudwatchRecentErrorsFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ReadCloudwatchLogs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:GetLogRecord
+                  - logs:DescribeLogGroups
+                  - logs:GetLogEvents
+                  - logs:FilterLogEvents
+                Resource: '*'
+
+  RecentErrorsFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: RecentErrorsSummary
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt CloudwatchRecentErrorsFunctionRole.Arn
+      Timeout: 60
+      Code:
+        ZipFile: |
+          import boto3
+          from collections import Counter
+          import json
+          import datetime
+
+          def extract_message(value):
+            if value.startswith('{'):
+              try:
+                structured_message = json.loads(value)
+
+                return structured_message.get('message', value)
+              except Exception:
+                pass
+            
+            return value
+
+          def take_ellipsis(value, length):
+            if len(value) <= length:
+              return value
+            else:
+              return value[:length - 1] + '…'
+
+          def lambda_handler(event, context):
+            log_group_name = event['logGroup']
+            lookback_minutes = int(event.get('minutes', 60))
+            filter = event.get('filter', 'ERROR')
+            limit = int(event.get('limit', 10))
+
+            logs_client = boto3.client('logs')
+
+            now = datetime.datetime.now()
+            offset = now - datetime.timedelta(minutes=lookback_minutes)
+            print(offset)
+            start_time = int(offset.timestamp() * 1000)
+            end_time = int(now.timestamp() * 1000)
+
+            response = logs_client.filter_log_events(
+              logGroupName=log_group_name,
+              startTime=start_time,
+              endTime=end_time,
+              filterPattern=filter
+            )
+            
+            messages = [extract_message(event['message']) for event in response['events']]
+            
+            message_counts = Counter(messages)
+
+            top_messages = message_counts.most_common(limit)
+
+            if top_messages:
+              formatted_messages = [
+                f'{index + 1}. `{take_ellipsis(message[0], 100)}` ({message[1]} occurrences)' for index, error in enumerate(top_messages)
+              ]
+              message_summary = '\n'.join(formatted_messages)
+
+              return f'*Most common errors in `{log_group_name}` within the last hour*\n\n' + message_summary
+            else:
+              return f'Found no errors matching filter within the last {lookback_minutes} minutes in {log_group_name}'
