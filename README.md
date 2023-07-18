@@ -38,3 +38,21 @@ Create a JIRA issue with a provided summary and description.
     "description": "$Description"
 }
 ```
+
+## Testing
+
+Useful for verifying things that invoke lambda functions and do things with their output.
+
+### Sleepy Lambda
+
+Creates a lambda that takes a number of seconds and sleeps for that long. Useful for verifying timeout behavior in callers.
+
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/sleepy-lambda.yml&stackName=SleepyLambda)
+
+*Example Payloads*:
+
+```json
+{
+    "sleepSeconds": "30"
+}
+```

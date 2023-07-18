@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  SleepyLambdaFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: SleepyLambdaFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  SleepyLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: SleepyLambda
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt SleepyLambdaFunctionRole.Arn
+      # use the max timeout to allow waiting for the max amount of time (15m)
+      Timeout: 900
+      Code:
+        ZipFile: |
+          import json
+          import time
+
+          def lambda_handler(event, context):
+            sleep_seconds = int(event.get('sleepSeconds', 10))
+
+            print(f'Sleeping {sleep_seconds} seconds')
+            time.sleep(sleep_seconds)
+
+            return {
+              message: f'I was zzz for {sleep_seconds} seconds'
+            }
