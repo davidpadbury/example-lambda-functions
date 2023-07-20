@@ -142,6 +142,8 @@ Resources:
                 issue_key = response_data['key']
 
                 url = f'https://{jira_host}/browse/{issue_key}'
+
+                return f'Created JIRA ticket <{url}|{issue_key}> 🎉'
               else:
                 print(response.read().decode())
                 raise Error(f'Failed to create issue [{response.status}]')
