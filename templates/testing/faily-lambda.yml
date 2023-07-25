@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  FailyLambdaFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: FailyLambdaFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  FailyLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: FailyLambda
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt FailyLambdaFunctionRole.Arn
+      Code:
+        ZipFile: |
+          from datetime import datetime
+
+          def lambda_handler(event, context):
+            raise Exception(f'Failing at {datetime.now()}')

@@ -1,0 +1,52 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  ResponseGeneratorLambdaFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: ResponseGeneratorLambdaFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  ResponseGeneratorLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: ResponseGeneratorLambda
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt ResponseGeneratorLambdaFunctionRole.Arn
+      Code:
+        ZipFile: |
+          import json
+          import random
+          import string
+
+          def lambda_handler(event, context):
+            response_type = event.get('type', 'text')
+            size = int(event.get('size', 100))
+            embed_response = bool(event.get('embedResponse', True))
+
+            if response_type == 'text':
+              body = ''.join(random.choice(string.printable) for i in range(size))
+            elif response_type == 'binary':
+              body = random.randbytes(size)
+            else:
+              raise Exception(f'Unknown type: {response_type}')
+
+            if embed_response:
+              response = {
+                'statusCode': 200,
+                'message': body,
+                'request': event
+              }
+            else:
+              response = body
+
+            return response

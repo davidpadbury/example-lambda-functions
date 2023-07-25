@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+
+  EchoMessageLambdaFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: EchoMessageLambdaFunctionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  EchoMessageLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: EchoMessageLambda
+      Runtime: python3.10
+      Handler: index.lambda_handler
+      Role: !GetAtt EchoMessageLambdaFunctionRole.Arn
+      Code:
+        ZipFile: |
+          import json
+
+          def lambda_handler(event, context):
+            message = event.get('message')
+
+            if not message:
+              response = "You didnt' send me anything!"
+            else:
+              response = f"You told me: _{message}_"
+            
+            return {
+              'statusCode': 200,
+              'body': response
+            }
