@@ -47,7 +47,7 @@ Useful for verifying things that invoke lambda functions and do things with thei
 
 Creates a lambda that takes a number of seconds and sleeps for that long. Useful for verifying timeout behavior in callers.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/sleepy-lambda.yml&stackName=SleepyLambda)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/testing/sleepy-lambda.yml&stackName=SleepyLambda)
 
 *Example Payloads*:
 
@@ -61,13 +61,13 @@ Creates a lambda that takes a number of seconds and sleeps for that long. Useful
 
 A lambda functions that does nothing but blow up when called. Useful for testing error handling.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/faily-lambda.yml&stackName=FailyLambda)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/testing/faily-lambda.yml&stackName=FailyLambda)
 
 ### Echo Message Lambda
 
 A lambda function that just echos back the message you send it. Useful for checking your requests.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/echo-message-lambda.yml&stackName=EchoMessageLambda)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/testing/echo-message-lambda.yml&stackName=EchoMessageLambda)
 
 *Example Payloads*:
 
@@ -81,7 +81,7 @@ A lambda function that just echos back the message you send it. Useful for check
 
 Generates a bunch of text or a bunch of binary rubbish. Useful for verifying response handling with extreme responses.
 
-[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/integrations/response-generator-lambda.yml&stackName=ResponseGeneratorLambda)
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://lambda-function-examples.s3.amazonaws.com/testing/response-generator-lambda.yml&stackName=ResponseGeneratorLambda)
 
 *Example Payloads*:
 
