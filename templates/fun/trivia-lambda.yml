@@ -52,16 +52,16 @@ Resources:
           QUESTIONS_URL = "https://raw.githubusercontent.com/uberspot/OpenTriviaQA/master/categories/science-technology"
           ANSWER_EMOIJIS: list[str] = [ '️A', '️B', 'C', 'D' ]
           CORRECT_MESSAGES = [
-              "🎉 Ding ding ding! You nailed it! 🎯",
-              "🤯 Whoa! Correct answer.",
-              "🚀 Houston, we have a winner!",
-              "🕵️‍♂️ Sherlock's got nothing on you!",
-              "🧠 Brain power level: 1000. You guessed right!",
-              "💡 Light bulb moment! That was spot on!",
-              "🍪 You deserve a cookie for that guess!",
-              "🎩 Magic or just genius? Either way, you're right!",
-              "🏆 Adding one more to your trophy case. Correct guess!",
-              "🦉 Wise like an owl, aren't we? Spot on!"
+              "🎉 Correct!!! Ding ding ding! You nailed it! 🎯",
+              "🤯 Correct!!! Whoa! Correct answer.",
+              "🚀 Correct!!! Houston, we have a winner!",
+              "🕵️ Correct!!!️ Sherlock's got nothing on you!",
+              "🧠 Correct!!! Brain power level: 1000. You guessed right!",
+              "💡 Correct!!! Light bulb moment! That was spot on!",
+              "🍪 Correct!!! You deserve a cookie for that guess!",
+              "🎩 Correct!!! Magic or just genius? Either way, you're right!",
+              "🏆 Correct!!! Adding one more to your trophy case. Correct guess!",
+              "🦉 Correct!!! Wise like an owl, aren't we? Spot on!"
           ]
           INCORRECT_MESSAGES = [
               "🚫 Swing and a miss! Try again?",
@@ -145,7 +145,7 @@ Resources:
                       description=question.generate_message()
                   ),
                   metadata=dict(
-                      additionalMetadata=dict(
+                      additionalContext=dict(
                           Question=next_question_index,
                       )
                   )
@@ -174,7 +174,7 @@ Resources:
 
 
           def submit_answer(event) -> str:
-              question_index = event['Question']
+              question_index = int(event['Question'])
               answer = event['Answer']
               answer_index = answer_to_answer_index(answer)
               question = questions[question_index]
