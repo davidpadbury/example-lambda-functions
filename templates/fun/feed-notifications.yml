@@ -70,6 +70,7 @@ Resources:
         Variables:
           FEED_URL: !Ref FeedUrl
           SNS_TOPIC_ARN: !Ref NotificationsTopicArn
+          SSM_PARAM_LATEST_ENTRY: !Ref LatestPublishedParameter
       Code:
         S3Bucket: lambda-function-examples
         S3Key: feed_notifications.zip
