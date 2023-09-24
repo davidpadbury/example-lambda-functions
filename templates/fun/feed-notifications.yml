@@ -67,7 +67,6 @@ Resources:
   FeedNotificationsFunction:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: Trivia
       Handler: index.lambda_handler
       Runtime: python3.10
       Role: !GetAtt FeedNotificationsExecutionRole.Arn
