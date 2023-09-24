@@ -64,10 +64,10 @@ Resources:
               "🦉 Correct!!! Wise like an owl, aren't we? Spot on!"
           ]
           INCORRECT_MESSAGES = [
-              "🚫 Swing and a miss! Try again?",
-              "🎣 You cast your line, but didn't catch the answer this time.",
-              "🛸 That answer was out of this world...and not in a good way.",
-              "😿 We aimed for the stars, but landed in the backyard.",
+              "🚫 Incorrect... Swing and a miss! Try again?",
+              "🎣 Incorrect... You cast your line, but didn't catch the answer this time.",
+              "🛸 Incorrect... That answer was out of this world...and not in a good way.",
+              "😿 Incorrect... We aimed for the stars, but landed in the backyard.",
           ]
 
 

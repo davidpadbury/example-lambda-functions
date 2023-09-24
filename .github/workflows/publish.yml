@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    - run: scripts/package-lambdas.sh
+    - run: cp templates/* build/
     - uses: jakejarvis/s3-sync-action@master
       with:
         args: --delete

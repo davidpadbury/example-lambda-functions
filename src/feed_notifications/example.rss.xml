@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss version="2.0">
+    <channel>
+        <link>https://aws.amazon.com/about-aws/whats-new/recent/</link>
+        <title>Recent Announcements</title>
+        <description>The AWS Cloud platform expands daily. Learn about announcements, launches, news, innovation and more from Amazon Web Services.</description>
+        <managingEditor>aws@amazon.com (Amazon Web Services)</managingEditor>
+        <lastBuildDate>Fri, 22 Sep 2023 21:32:38 +0000</lastBuildDate>
+        <pubDate>Fri, 22 Sep 2023 21:32:38 +0000</pubDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <image>
+            <url>https://a0.awsstatic.com/main/images/logos/aws_logo_smile_179x109.png</url>
+            <link>https://aws.amazon.com/about-aws/whats-new/recent/</link>
+            <title>Recent Announcements</title>
+            <description>The AWS Cloud platform expands daily. Learn about announcements, launches, news, innovation and more from Amazon Web Services.</description>
+        </image>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-sns-message-data-protection-de-identify-outbound-messages/</link>
+            <guid isPermaLink="false">511fc42ce6f614b5aa8fee9c27a4f37b9a1bdef7</guid>
+            <title>Amazon SNS message data protection can now de-identify outbound messages via redaction or masking</title>
+            <description>&lt;p&gt;Amazon SNS message data protection is a set of capabilities that leverage pattern matching, machine learning models, and content policies to help security and engineering teams facilitate real-time data protection in their applications that use Amazon SNS to exchange high volumes of data. Now, you can de-identify outbound message data within a payload, in real-time, via data redaction or masking. Thus, each endpoint subscribed to your Amazon SNS topic may receive a different payload from the topic, with different sensitive data de-identified, according to their data access permissions.&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 17:02:14 +0000</pubDate>
+            <category>general:products/amazon-sns,general:products/amazon-sqs,marketing:marchitecture/application-services,marketing:marchitecture/serverless,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-documentdb-mongodb-in-place-version-upgrade/</link>
+            <guid isPermaLink="false">b5a5e58452d1446a62652a157d02e0acdb62c607</guid>
+            <title>Amazon DocumentDB (with MongoDB compatibility) supports in-place major version upgrade</title>
+            <description>&lt;p&gt;&lt;a href="/documentdb/" target="_blank" rel="noopener"&gt;Amazon DocumentDB&lt;/a&gt; (with MongoDB compatibility) now supports an in-place major version upgrade (MVU) from Amazon DocumentDB versions 3.6 and 4.0 to version 5.0. Instead of backing up and restoring the database to the new version or relying on database migration tools, you can perform an in-place major version upgrade with a few clicks using the AWS console, the latest AWS Software Development Kit (SDK), or Command Line Interface (CLI). With in-place MVU, no new clusters are created in the process and you can continue using the existing cluster endpoints for your applications.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 17:43:45 +0000</pubDate>
+            <category>general:products/amazon-documentdb,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/iam-roles-anywhere-govcloud-regions/</link>
+            <guid isPermaLink="false">8b19844ed0d2ddff88670e21d4e9052f3c08a0c2</guid>
+            <title>IAM Roles Anywhere is now available in the AWS GovCloud (US) Regions</title>
+            <description>&lt;p&gt;AWS Identity and Access Management (IAM) Roles Anywhere is now available &lt;a href="/govcloud-us/" target="_blank" rel="noopener"&gt;in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions&lt;/a&gt;. &lt;a href="https://aws.amazon.com/iam/features/#IAM_Roles_Anywhere" target="_blank" rel="noopener"&gt;IAM Roles Anywhere&lt;/a&gt; enables&amp;nbsp;workloads that run outside of AWS to access AWS resources using IAM roles and policies in the same way you do from your AWS workloads. IAM Roles Anywhere allows your workloads such as servers, containers, and applications to use X.509 digital certificates to obtain temporary AWS credentials.&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 21:32:38 +0000</pubDate>
+            <category>general:products/aws-iam,general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-healthimaging-cloudformation/</link>
+            <guid isPermaLink="false">1376090f863665349a57c6dd4771bebdc764cf6f</guid>
+            <title>AWS HealthImaging supports CloudFormation</title>
+            <description>&lt;p&gt;AWS HealthImaging now supports AWS CloudFormation. With CloudFormation support, you can now use CloudFormation templates to create and delete your AWS HealthImaging resources. This helps you automate and standardize DevOps processes across your AWS accounts and AWS Regions for AWS HealthImaging.&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 18:01:39 +0000</pubDate>
+            <category>general:products/aws-health,general:products/aws-cloudformation,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-app-runner-auto-scaling-management/</link>
+            <guid isPermaLink="false">cda71344a37c647a5549f7dc94666fe4e5ca6d8f</guid>
+            <title>AWS App Runner launches improvements for Auto-Scaling configuration management</title>
+            <description>&lt;p&gt;Today, AWS App Runner launched improvements for managing Auto-Scaling Configuration (ASC). App Runner makes it easier for developers to quickly deploy containerized web applications and APIs to the cloud, at scale, and without managing infrastructure. With App Runner, you do not have to manage load balancer for your service(s). App Runner automatically scales compute resources, specifically instances, up or down for your App Runner service. Automatic scaling provides adequate request handling when traffic is heavy, and reduces your cost when traffic slows down. You can control auto scaling settings through a sharable resource called &lt;i&gt;AutoScalingConfiguration&lt;/i&gt;.&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 16:59:59 +0000</pubDate>
+            <category>general:products/aws-app-runner,marketing:marchitecture/containers,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-cloudformation-security-profiles/</link>
+            <guid isPermaLink="false">1818edfbd0bf771eb9346ad279dd53963f578856</guid>
+            <title>Amazon Connect launches CloudFormation support for security profiles</title>
+            <description>&lt;p&gt;Amazon Connect now supports AWS CloudFormation for security profiles. You can now use AWS CloudFormation templates to deploy Amazon Connect security profiles —along with the rest of your AWS infrastructure— in a secure, efficient, and repeatable way, allowing you to apply consistent security policies across instances. CloudFormation allows you to track changes over time, apply updates in a controlled and automated manner, and includes version controls so you can easy roll back changes if needed. For more information, see &lt;a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Connect.html" target="_blank" rel="noopener"&gt;Amazon Connect Resource Type Reference&lt;/a&gt; in the AWS CloudFormation User Guide.&lt;/p&gt;</description>
+            <pubDate>Fri, 22 Sep 2023 18:51:56 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/messaging,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-corretto-21-generally-available/</link>
+            <guid isPermaLink="false">044ee71afab781fcc65d533ded7d1096c3e38d1a</guid>
+            <title>Amazon Corretto 21 is now generally available</title>
+            <description>&lt;p&gt;Amazon Corretto 21 is now generally available. This Long Term Support (LTS) version supports the latest Java release, OpenJDK 21, and is available on Linux, Windows, and macOS. You can download Corretto 21 from our &lt;a href="https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html" target="_blank" rel="noopener"&gt;downloads page&lt;/a&gt;. &lt;/p&gt;</description>
+            <pubDate>Thu, 21 Sep 2023 20:03:23 +0000</pubDate>
+            <category>general:products/amazon-corretto,marketing:marchitecture/developer-tools</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/simulate-interruptions-spot-fleet-amazon-ec2-console/</link>
+            <guid isPermaLink="false">e4fc752c84d15ef6ff5e41975783cc76e123de70</guid>
+            <title>Simulate interruptions in your Spot Fleet directly from the Amazon EC2 Console</title>
+            <description>&lt;p&gt;You can now inject random &lt;a href="/ec2/spot/" target="_blank" rel="noopener"&gt;Amazon EC2 Spot Instance&lt;/a&gt; interruptions into your Spot Fleets directly from the &lt;a href="https://console.aws.amazon.com/ec2/" target="_blank" rel="noopener"&gt;Amazon EC2 console&lt;/a&gt;. In 2022, we launched the ability for you to use &lt;a href="/fis/" target="_blank" rel="noopener"&gt;AWS Fault Injection Simulator (AWS FIS)&lt;/a&gt; in the Amazon EC2 console to simulate what happens when Amazon EC2 reclaims a single EC2 Spot Instance. Now, we have enhanced this capability so you can introduce interruptions in a randomly selected set of instances of a Spot Fleet with just a couple of clicks. This makes it easy to test if your Spot Fleet-based application is resilient against the random nature of Spot Interruptions.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Thu, 21 Sep 2023 18:33:16 +0000</pubDate>
+            <category>general:products/aws-fault-injection-simulator,general:products/amazon-ec2,marketing:marchitecture/compute,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/iam-roles-anywhere-credential-helper-pkcs-11-modules/</link>
+            <guid isPermaLink="false">03503fca3a0933b060010576b4a6d30265431182</guid>
+            <title>IAM Roles Anywhere credential helper now supports PKCS #11 modules</title>
+            <description>&lt;p&gt;Today, &lt;a href="https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html" target="_blank" rel="noopener"&gt;AWS Identity and Access Management (IAM) Roles Anywhere&lt;/a&gt; released &lt;a href="https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html" target="_blank" rel="noopener"&gt;credential helper&lt;/a&gt; version 1.1.0 to include support for X.509 certificates and private keys that are stored in Public-Key Cryptography Standards (PKCS) #11 compatible security modules. IAM Roles Anywhere credential helper is a tool that manages the process of signing &lt;a href="https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-create-session.html" target="_blank" rel="noopener"&gt;CreateSession API&lt;/a&gt; with the private key associated with an X.509 end-entity certificate and calls the endpoint to obtain temporary AWS credentials. With this release, you can use the credential helper to delegate signing operations to keys stored within PKCS #11 compatible security modules, without those keys ever leaving those stores; which can help improve your security posture.&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 20:17:54 +0000</pubDate>
+            <category>general:products/aws-identity-and-access-management,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-oracle-m6i-r6i-r5b-instances-new-regions/</link>
+            <guid isPermaLink="false">87709bfb4f87547795826d1e65e946fe7bf0d195</guid>
+            <title>Amazon RDS for Oracle supports M6i, R6i, and R5b instances in new regions</title>
+            <description>&lt;p&gt;&lt;a href="/rds/oracle/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (Amazon RDS) for Oracle&lt;/a&gt; now&amp;nbsp;supports M6i, R6i, and R5b instances in additional regions. M6i instances for RDS for Oracle will now be available in 9 new regions: Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Osaka), Europe (Milan, Stockholm), and Middle East (Bahrain, UAE). R6i instances for RDS for Oracle will now be available in 8 new regions: Africa (Capetown), Asia Pacific (Hong Kong, Osaka), Europe (Frankfurt, Milan, Stockholm), and Middle East (Bahrain, UAE). R5b instances for RDS for Oracle will now be available in 6 new regions: Asia Pacific (Seoul, Sydney), Canada (Central), Europe (Milan, Stockholm), and South America (São Paulo).&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 17:02:15 +0000</pubDate>
+            <category>general:products/amazon-rds-for-oracle,marketing:marchitecture/databases,general:products/amazon-rds</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-glue-data-quality-identify-records-failed-customsql-rule-type/</link>
+            <guid isPermaLink="false">69b08a77a1a2e4ff91728d1f519d00eff6f682ab</guid>
+            <title>AWS Glue Data Quality can now identify records that failed the CustomSQL rule type</title>
+            <description>&lt;p&gt;AWS Glue Data Quality can now identify records that have the CustomSQL rule type, enabling customers to isolate problematic records from the good records to allow only high-quality data flows into their data lakes and warehouses.&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 17:01:05 +0000</pubDate>
+            <category>general:products/aws-glue,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-glue-interactive-sessions-kernel-support-iam-conditionals/</link>
+            <guid isPermaLink="false">6f9c4d602943d73033246d0874e18b504dc6248b</guid>
+            <title>AWS Glue Interactive Sessions releases new kernel and support IAM Conditionals</title>
+            <description>&lt;p&gt;&lt;a href="https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-overview.html" target="_blank" rel="noopener"&gt;AWS Glue Interactive Sessions&lt;/a&gt; now&amp;nbsp;supports 4 new notebook kernel magics: assume_role, tags, session_type and matplot. These magics are available in Glue Interactive Sessions kernel 1.0 or later. Additionally, Glue Interactive Sessions now supports IAM Conditionals.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 17:14:23 +0000</pubDate>
+            <category>general:products/aws-glue,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-location-services-price-reduction-tracking-geofencing/</link>
+            <guid isPermaLink="false">3d19bb508c966e301a53389d43a54034b33fb1ff</guid>
+            <title>Amazon Location Services announces a price reduction of up to 75% for tracking and geofencing</title>
+            <description>&lt;p&gt;Today, Amazon Location Service announced a price reduction of up to 75% for tracking position writes and up to 70% for geofence evaluations, depending on your usage levels. Developers can use Amazon Location Trackers to track the current and historic location of devices in order to optimize operations such as asset management and delivery dispatch. They can evaluate location updates from their devices against their geofences to detect and act when a tracked device enters or exits a geographical boundary. This event-driven setup makes it easy for applications to scale in size and sophistication as needed.&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 18:41:05 +0000</pubDate>
+            <category>general:products/amazon-location-service,marketing:marchitecture/mobile-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-cloudwatch-metric-math-rds-insights/</link>
+            <guid isPermaLink="false">5c543d6f6d23b6b373dce21f840ebb679bd94525</guid>
+            <title>Amazon CloudWatch adds new Metric Math for RDS Performance Insights</title>
+            <description>&lt;p&gt;&lt;a href="/cloudwatch/" target="_blank" rel="noopener"&gt;Amazon CloudWatch&lt;/a&gt; announces support of a new Metric Math function called DB_PERF_INSIGHTS() to create CloudWatch alarms and dashboards on Amazon RDS Performance Insights metrics.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 16:52:10 +0000</pubDate>
+            <category>general:products/amazon-cloudwatch,general:products/amazon-rds,general:products/aws-govcloud-us,marketing:marchitecture/databases,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/swift-package-manager-aws-code-artifact/</link>
+            <guid isPermaLink="false">c0c5cfc216a41e27a863029437bf3614541276a5</guid>
+            <title>Announcing Swift Package Manager support in AWS CodeArtifact</title>
+            <description>&lt;p&gt;Today, AWS announces the general availability of Swift Package Manager (SwiftPM) support in CodeArtifact. Swift is the language of choice for developing applications on the Apple platform, and the Swift Package Manager is used to distribute source code in the Swift ecosystem. With SwiftPM support in CodeArtifact, developers can publish and download their Swift package dependencies to their CodeArtifact repository.&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 21:36:35 +0000</pubDate>
+            <category>general:products/aws-codeartifact,marketing:marchitecture/developer-tools</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-cloud-map-api-service-revision/</link>
+            <guid isPermaLink="false">b16ba9091dc0001489d6e8cce3cff8a880b24d8f</guid>
+            <title>AWS Cloud Map introduces new API for retrieving service revision</title>
+            <description>&lt;p&gt;AWS Cloud Map introduces a new API for retrieving the revision of your services. It allows your applications to update the state of your cloud resources only when it has changed, minimizing the discovery traffic and API cost. With AWS Cloud Map, you can define custom names for your application resources, such as Amazon Elastic Container Services (Amazon ECS) tasks, Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon DynamoDB tables, or other cloud resources. You can then use these custom names to discover the location and metadata of cloud resources from your applications using AWS SDK and authenticated API calls.&lt;/p&gt;</description>
+            <pubDate>Wed, 20 Sep 2023 18:30:05 +0000</pubDate>
+            <category>general:products/aws-cloud-map,marketing:marchitecture/networking-and-content-delivery,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-quicksight-layout-sparkline-kpi-visual/</link>
+            <guid isPermaLink="false">156c56a7ba858ae4e4e1d72a6e8caf2327bc31c6</guid>
+            <title>Amazon QuickSight adds new layout and sparkline to KPI visual</title>
+            <description>&lt;p&gt;Amazon QuickSight introduces a range of exciting enhancements to KPI visual, including templated KPI layouts, support for sparklines, improvements in conditional formatting, and a revamped format pane. The KPI visual now offers a user-friendly onboarding experience, allowing authors to select from pre-designed KPI layouts tailored to various use cases and configurations. This empowers authors to effortlessly craft visually appealing KPIs with just a few clicks.&lt;/p&gt;</description>
+            <pubDate>Tue, 19 Sep 2023 20:18:34 +0000</pubDate>
+            <category>general:products/aws-govcloud-us,general:products/amazon-quicksight,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-x2iedn-instances-sql-server/</link>
+            <guid isPermaLink="false">0b9b6f2ec799abd0a5aee8dc9b9a3129f520c8c3</guid>
+            <title>Amazon RDS now supports X2iedn instances for SQL Server</title>
+            <description>&lt;p&gt;&lt;a href="/rds/sqlserver/" target="_blank" rel="noopener"&gt;Amazon RDS for SQL Server&lt;/a&gt; now supports memory optimized X2iedn DB instances that are well-suited for memory-intensive, read-heavy and high-throughput write operations.&amp;nbsp;&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Tue, 19 Sep 2023 17:46:34 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-management-console-usability-navigation-bar/</link>
+            <guid isPermaLink="false">bdb989f7dd82695d473bcb50d8756a098c959a49</guid>
+            <title>Usability improvements and navigation bar enhancements for the AWS Management Console</title>
+            <description>&lt;p&gt;Today, we launched four usability improvements and enhancements in the AWS Management Console. Usability improvements include descriptive page titles and high resolution favicons that display in the browser tab for an AWS Console page. We also updated the Navigation bar to include a display option for favorite icon size and a new settings menu. With this launch, the link to Unified Settings is moving from the account menu to the new settings menu shown as the gear icon in the navigation bar.&lt;/p&gt;</description>
+            <pubDate>Tue, 19 Sep 2023 21:40:16 +0000</pubDate>
+            <category>general:products/aws-management-console,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-m2-pro-mac-instances-macos/</link>
+            <guid isPermaLink="false">98ff59aa1fb2d80e381ff80dbfac01ca141f4908</guid>
+            <title>Announcing general availability of Amazon EC2 M2 Pro Mac instances for macOS</title>
+            <description>&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M2 Pro Mac instances are now generally available (GA). These instances deliver up to 35% faster performance over the existing M1 Mac instances when building and testing applications for Apple platforms such as iOS, macOS, iPadOS, tvOS, watchOS, visionOS, and Safari. M2 Pro Mac instances are powered by the AWS Nitro System and are built on Apple M2 Pro Mac Mini computers featuring 12 core CPU, 19 core GPU, 32 GiB of memory, and 16 core Apple Neural Engine.&lt;/p&gt;</description>
+            <pubDate>Tue, 19 Sep 2023 20:40:15 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-lookout-equipment-model-retraining/</link>
+            <guid isPermaLink="false">89fbd224fb50f4806b891313365bdedb53397978</guid>
+            <title>Announcing model retraining for Amazon Lookout for Equipment</title>
+            <description>&lt;p&gt;&lt;a href="/lookout-for-equipment/" target="_blank" rel="noopener"&gt;Amazon Lookout for Equipment&lt;/a&gt; is an ML industrial equipment monitoring service that detects abnormal equipment behavior so you can act and avoid unplanned downtime. Lookout for Equipment uses your unique ML model(s) and in real-time helps accurately identify early warning signs that could lead to machine failures. This helps you detect equipment abnormalities with speed and precision, quickly diagnose issues, and take action to reduce expensive downtime.&lt;/p&gt;</description>
+            <pubDate>Tue, 19 Sep 2023 16:49:26 +0000</pubDate>
+            <category>general:products/amazon-lookout-for-metrics,general:products/amazon-machine-learning,marketing:marchitecture/artificial-intelligence</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-cloudwatch-synthetics-synthetics-python-runtime-version-2-0/</link>
+            <guid isPermaLink="false">68dea9fd6d75956ef6d58d163033842c55c0c908</guid>
+            <title>Amazon CloudWatch Synthetics announces new Synthetics Python runtime version 2.0</title>
+            <description>&lt;p&gt;Amazon CloudWatch Synthetics announces a new update to Synthetics Python runtime version syn-python-selenium-2.0 and recommends that customers migrate Synthetics canaries to the latest runtime version. Runtime version syn-python-selenium-2.0 includes updates to third-party dependency packages (Selenium v4.10.0 and Chromium v111.0.5563.146).&lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 18:14:59 +0000</pubDate>
+            <category>general:products/aws-govcloud-us,general:products/amazon-cloudwatch,marketing:marchitecture/management-and-governance,marketing:marchitecture/developer-tools,marketing:marchitecture/mobile-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-telecom-services-competency-partners/</link>
+            <guid isPermaLink="false">5a0f0a3574c8bd29788cc06c29afa6977d02fa2e</guid>
+            <title>Introducing AWS Telecom Services Competency Partners</title>
+            <description>&lt;p&gt;AWS is excited to introduce the AWS Telecom Services Competency, which provides customers with a vetted list of AWS Partners validated for their expertise and proven success delivering telecom consulting services. The AWS Telecom Services Competency validates partner strengths and capabilities in key telecom service areas including Operation Support Services (OSS), Business Support Systems (BSS), Communication as a Service (CaaS), Mobile Networks, and Media &amp;amp; TV. &lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 21:39:32 +0000</pubDate>
+            <category>marketing:marchitecture/partner-network</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/bottlerocket-new-ecs-optimized-ami/</link>
+            <guid isPermaLink="false">55c20d0ff81ad23e1e764985dc189c1cd7ad7791</guid>
+            <title>Bottlerocket announces new ECS-optimized AMI</title>
+            <description>&lt;p&gt;Bottlerocket, a Linux-based operating system that is purpose built to host container workloads, announced a new ECS-optimized AMI featuring version 6.1 of the Linux kernel. Customers using Bottlerocket with Amazon Elastic Container Service (Amazon ECS) can now benefit from additional features offered in this new AMI as well as the option to specify the needed Bottlerocket AMIs directly from the Amazon ECS console.&lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 20:56:57 +0000</pubDate>
+            <category>general:products/bottlerocket,marketing:marchitecture/containers,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ebs-multi-attach-io2-volumes-nvme-reservations/</link>
+            <guid isPermaLink="false">857b38566228dfe8ed66a0a68233013676550937</guid>
+            <title>Amazon EBS Multi-Attach on io2 volumes now supports NVMe reservations</title>
+            <description>&lt;p&gt;Amazon EBS io2 volumes now support shared storage fencing through NVMe reservations. For clustered applications that leverage EBS Multi-Attach capability of io2 volumes, NVMe reservations enables safe write access across the cluster nodes. Clustered applications are designed to increase application availability and scalability by using multiple compute nodes that coordinate access to shared storage. You can now use Multi-Attach on io2 volumes to deploy clustered Windows and Linux applications that require storage-layer fencing, such as SQL Server Failover Cluster Instances (FCI), within a single Availability Zone.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 19:04:04 +0000</pubDate>
+            <category>general:products/amazon-elastic-block-store,marketing:marchitecture/compute,marketing:marchitecture/storage</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-iam-identity-europe-zurich-region/</link>
+            <guid isPermaLink="false">29e74e3d973ca2314fdf5ccb3029838153e298bc</guid>
+            <title>AWS IAM Identity Center is now available in the Europe (Zurich) Region</title>
+            <description>&lt;p&gt;AWS IAM Identity Center was launched in the Europe (Zurich) Region. With the addition of this Region, IAM Identity Center is now available in 26 AWS Regions globally.&lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 21:36:47 +0000</pubDate>
+            <category>general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-step-functions-distributed-map-govcloud-regions/</link>
+            <guid isPermaLink="false">581d21c04be5f08a98a21a2d7096632ac1f6255d</guid>
+            <title>AWS Step Functions distributed map is now available in the AWS GovCloud (US) Regions</title>
+            <description>&lt;p&gt;AWS Step Functions is announcing the general availability of distributed map in the AWS GovCloud (US) Regions. &lt;a href="/step-functions/" target="_blank" rel="noopener"&gt;AWS Step Functions&lt;/a&gt; is a&amp;nbsp;workflow service capable of orchestrating 11,000+ API actions from over 220 AWS services to automate business processes and data processing workloads.&lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 21:56:00 +0000</pubDate>
+            <category>general:products/aws-govcloud-us,general:products/aws-step-functions,marketing:marchitecture/application-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-performance-insights-sql-metrics-rds-server/</link>
+            <guid isPermaLink="false">716e250c443729561b212528c29c5f2de489ff5e</guid>
+            <title>Amazon RDS Performance Insights supports SQL-level metrics for Amazon RDS for SQL Server</title>
+            <description>&lt;p&gt;&lt;a href="/rds/performance-insights/" target="_blank" rel="noopener"&gt;Amazon RDS (Relational Database Service) Performance Insights&lt;/a&gt; supports SQL-level metrics for Amazon RDS for SQL Server so that you can identify high-frequency, long-running, and stuck SQL queries in seconds. SQL level statistics are already available for all other Amazon RDS engines.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Mon, 18 Sep 2023 17:09:32 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-codecatalyst-ip-address-access-restrictions-github-enterprise-cloud/</link>
+            <guid isPermaLink="false">6b51e5ded90a2c8ac8de8bb8b550aa7bcd8324ca</guid>
+            <title>Amazon CodeCatalyst now supports IP address access restrictions in GitHub Enterprise Cloud</title>
+            <description>&lt;p&gt;Today, AWS announces that using&amp;nbsp;&lt;a href="https://codecatalyst.aws/explore" target="_blank" rel="noopener"&gt;Amazon CodeCatalyst&lt;/a&gt; with source repositories hosted in GitHub is now compatible with IP address access restrictions in GitHub Organizations. This ensures that CodeCatalyst is compatible with all features in GitHub Enterprise Cloud.&lt;/p&gt;</description>
+            <pubDate>Fri, 15 Sep 2023 17:25:53 +0000</pubDate>
+            <category>marketing:marchitecture/developer-tools,general:products/amazon-codecatalyst</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-emr-eks-managed-apache-flink-public-preview/</link>
+            <guid isPermaLink="false">d460b4b256d7275671453f994aca4dbd3b651268</guid>
+            <title>Amazon EMR on EKS now supports managed Apache Flink (Public Preview)</title>
+            <description>&lt;p&gt;Today, we are excited to announce that Amazon EMR on EKS now supports managed Apache Flink, available in public preview. With this launch, customers who already use EMR can run their Apache Flink application along with other types of applications on the same Amazon EKS cluster, helping improve resource utilization and simplify infrastructure management. For customers who already run big data frameworks on Amazon EKS, they can now let Amazon EMR automate provisioning and management.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Fri, 15 Sep 2023 17:02:01 +0000</pubDate>
+            <category>general:products/amazon-emr,general:products/amazon-eks,marketing:marchitecture/analytics,marketing:marchitecture/containers</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-cloudmap-supports-privatelink/</link>
+            <guid isPermaLink="false">0bb7714dbbdc826d30fc0d4ba26e612bc1b69ebe</guid>
+            <title>AWS Cloud Map now supports AWS PrivateLink</title>
+            <description>&lt;p&gt;AWS Cloud Map now supports AWS PrivateLink. You can now use AWS PrivateLink to privately access AWS Cloud Map APIs from your Amazon Virtual Private Cloud (VPC) without exposing your data through public internet. Creating VPC Endpoints incurs charges. See the AWS PrivateLink &lt;a href="/privatelink/pricing/" target="_blank" rel="noopener"&gt;pricing&lt;/a&gt; page for more information.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 15 Sep 2023 18:47:12 +0000</pubDate>
+            <category>marketing:marchitecture/networking-and-content-delivery,general:products/aws-govcloud-us,general:products/aws-cloud-map</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/postgresql-16-rds-database-preview-environment/</link>
+            <guid isPermaLink="false">52eead2cd879d218e3a8da75cbcfa0f2e21337bf</guid>
+            <title>PostgreSQL 16.0 is now available in Amazon RDS Database Preview Environment</title>
+            <description>&lt;p&gt;&lt;a href="/rds/postgresql/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (Amazon RDS) for PostgreSQL&lt;/a&gt; 16.0 is now available in the &lt;a href="/rds/databasepreview/" target="_blank" rel="noopener"&gt;Amazon RDS Database Preview Environment&lt;/a&gt;, allowing you to evaluate PostgreSQL 16.0 on Amazon RDS for PostgreSQL. You can deploy PostgreSQL 16.0 in the Preview Environment and have the same benefits of a fully managed database, making it simpler to set up, operate, and monitor databases. PostgreSQL 16.0 in the Preview Environment also includes support for logical decoding on read replicas, AWS libcrypto (&lt;a href="https://github.com/aws/aws-lc" target="_blank" rel="noopener"&gt;AWS-LC&lt;/a&gt;), and over 80 PostgreSQL extensions such as pgvector, pg_tle, h3-pg, pg_cron, and rdkit.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 15 Sep 2023 21:36:07 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/codepipeline-gitlab-groups/</link>
+            <guid isPermaLink="false">920217312d02fe2f29e64a2a7a0ecbc3a6d957eb</guid>
+            <title>CodePipeline support for GitLab Groups</title>
+            <description>&lt;p&gt;You can now use repositories in your project in a GitLab.com Group to build, test, and deploy code changes using AWS CodePipeline. Connect your GitLab.com account using AWS CodeStar Connections, and use the connection in your pipeline to automatically start a pipeline execution on changes in your repository.&lt;/p&gt;</description>
+            <pubDate>Fri, 15 Sep 2023 21:20:00 +0000</pubDate>
+            <category>general:products/aws-codepipeline,marketing:marchitecture/developer-tools</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amplify-studio-full-support-graphql-apis/</link>
+            <guid isPermaLink="false">1b2f1c0580e4ea494fc0fb020925f27c3c77c8ab</guid>
+            <title>Amplify Studio now offers full support of GraphQL APIs</title>
+            <description>&lt;p&gt;AWS Amplify Studio is excited to announce full support for GraphQL APIs - all developers using GraphQL APIs created either with Amplify Studio or Amplify CLI will now fully have access to all of Studio’s features. This includes Form Builder, Figma to Code UI generation, and Data Manager. &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 21:02:58 +0000</pubDate>
+            <category>general:products/aws-amplify,marketing:marchitecture/mobile-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-identity-access-management-action-last-accessed-information/</link>
+            <guid isPermaLink="false">9989fd9f56f1e10c3399ad7d5beb67b655082ccd</guid>
+            <title>AWS Identity and Access Management provides action last accessed information for more than 140 services</title>
+            <description>&lt;p&gt;AWS Identity and Access Management (IAM) now provides action last accessed information for more than 140 services to help you refine the permissions of your IAM roles. You can review action last accessed information, identify unused permissions, and refine to scope down the access of your IAM roles to only the actions that they use for services such as Amazon CloudWatch, AWS Key Management Service (AWS KMS), and Elastic Load Balancing (ELB).&amp;nbsp;&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 20:21:45 +0000</pubDate>
+            <category>general:products/aws-iam,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-quicksight-pixel-based-font-size-text-highlighting/</link>
+            <guid isPermaLink="false">447f2731e437bd132db9459ef026edc261612cf5</guid>
+            <title>Amazon QuickSight launches pixel based font size and text highlighting for textbox visual</title>
+            <description>&lt;p&gt;Amazon QuickSight introduces pixel-based font sizing for Textbox, a departure from the fixed font sizes ranging from small to X-large. This enhancement empowers authors with unmatched precision, allowing them to finely adjust font sizes based on numeric or pixel values ("14px" or "32px"), granting greater flexibility. Along with this we are also adding text highlighting capabilities, similar to that of Insights visual. You can highlight text to emphasis key data points and insights making it easier to drive user attention precisely where you want it, making your data-driven narratives even more compelling. For more details refer &lt;a href="https://docs.aws.amazon.com/quicksight/latest/user/textbox.html" target="_blank" rel="noopener"&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 17:02:06 +0000</pubDate>
+            <category>general:products/amazon-quicksight,marketing:marchitecture/analytics,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-c7i-instances/</link>
+            <guid isPermaLink="false">81f04a5ec6c67107e4631497b42f16ae1d5c98d8</guid>
+            <title>Introducing Amazon EC2 C7i instances</title>
+            <description>&lt;p&gt;AWS announces the general availability of Amazon Elastic Compute Cloud (Amazon EC2) C7i instances powered by custom 4th Generation Intel Xeon Scalable processors (code-named Sapphire Rapids). These custom processors, available only on AWS, offer up to 15% better performance over comparable x86-based Intel processors utilized by other cloud providers.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 18:38:13 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-x2idn-x2iedn-instances-africa-cape-town-region/</link>
+            <guid isPermaLink="false">d1a6a75638e61992afd49b77e51636d8b5988d19</guid>
+            <title>Amazon EC2 X2idn and X2iedn instances now available in Africa (Cape Town) region</title>
+            <description>&lt;p&gt;Starting today, memory optimized Amazon Compute Cloud (Amazon EC2) X2idn and X2iedn instances are available in Africa (Cape Town) region. These instances, powered by 3rd generation Intel Xeon Scalable Processors (Ice Lake) and built with AWS Nitro System, are designed for memory-intensive workloads. They deliver improvements in performance, price performance, and cost per GiB of memory compared to previous generation X1 instances. These instances&amp;nbsp;are &lt;a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;ve:23" target="_blank" rel="noopener"&gt;SAP-certified&lt;/a&gt; for&amp;nbsp;running Business Suite on HANA, SAP S/4HANA, Data Mart Solutions on HANA, Business Warehouse on HANA, SAP BW/4HANA, and SAP NetWeaver workloads on any database.&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 20:35:19 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-sns-fifo-topics-message-delivery-sqs-standard-queues/</link>
+            <guid isPermaLink="false">13996aa4c2fe91113a59295af124c49954a5613b</guid>
+            <title>Amazon SNS FIFO topics now support message delivery to Amazon SQS Standard queues</title>
+            <description>&lt;p&gt;You can now subscribe Amazon Simple Queue Service (SQS) Standard queues to Amazon Simple Notification Service (SNS) First-In-First-Out (FIFO) topics. Thus, from a single SNS FIFO topic, you can now deliver messages to SQS Standard queues, which offer best-effort ordering and at-least-once delivery, as well as to SQS FIFO queues, which support strict ordering and exactly-once delivery. This new capability further decouples message publishers from subscribers, as the SNS topic type no longer dictates the SQS queue type that subscribers ought to use.&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 21:52:43 +0000</pubDate>
+            <category>general:products/amazon-sns,general:products/amazon-sqs</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-is4gen-instances-asia-pacific-mumbai-region/</link>
+            <guid isPermaLink="false">a824a16f34a7f9356f73f20c5932f83c39677ddf</guid>
+            <title>Amazon EC2 Is4gen Instances are now available in Asia Pacific (Mumbai) region</title>
+            <description>&lt;p&gt;Starting today, Amazon EC2 Is4gen instances, the latest generation storage-optimized instances, are available in Asia Pacific (Mumbai) region. Based on the &lt;a href="/ec2/nitro/" target="_blank" rel="noopener"&gt;AWS Nitro System&lt;/a&gt;, Is4gen instances are powered by AWS Graviton2 processors and are built using AWS Nitro SSDs which reduce both latency and latency variability compared to the third generation of EC2 storage optimized instances. &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 16:59:30 +0000</pubDate>
+            <category>marketing:marchitecture/compute,general:products/amazon-ec2,marketing:marchitecture/storage</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-supply-chain-demand-planning-extends-availability-sydney-region/</link>
+            <guid isPermaLink="false">39e038e9df38bfeeb2e5914be9ab1e668166eb05</guid>
+            <title>AWS Supply Chain Demand Planning extends availability into Sydney region</title>
+            <description>&lt;p&gt;AWS Supply Chain Demand Planning, one of AWS Supply Chain’s purpose-built supply chain management applications, is now generally available in Australia (Sydney). With this release AWS Supply Chain Demand Planning is now available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt), and Australia (Sydney).&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 17:04:10 +0000</pubDate>
+            <category>general:products/aws-supply-chain,marketing:marchitecture/business-productivity</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-supply-chain-override-retention-capability/</link>
+            <guid isPermaLink="false">7f5a28e2c7b861dcf79c1b32ae4337c4adfa899b</guid>
+            <title>AWS Supply Chain adds new override retention capability</title>
+            <description>&lt;p&gt;Starting today, manual forecast overrides (i.e. adjustments) made by a demand planner are automatically saved and reapplied from one planning cycle to the next. Demand planners commonly adjust system-generated baseline forecasts for known demand variations. These adjustments, or forecast overrides, reflect seasonality fluctuations, promotions, or other variable that affects the forecast. These adjustments were always entered manually during the new planning cycle. With this release, overrides are remembered and then applied to the re-calibrated system generated baseline forecast. Demand planners can now view and manage forecast overrides across planning cycles in one unified view.&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 17:04:35 +0000</pubDate>
+            <category>marketing:marchitecture/business-productivity,general:products/aws-supply-chain</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-control-tower-new-regions/</link>
+            <guid isPermaLink="false">66639ca07944071b1f17782c6e8b4ff15c3cfa04</guid>
+            <title>AWS Control Tower is now available in Hyderabad, Spain, UAE, and Zurich Regions</title>
+            <description>&lt;p&gt;Today, AWS Control Tower is available in Asia Pacific (Hyderabad), Europe (Spain and Zurich), and the Middle East (UAE). With this launch, AWS Control Tower is available in 27 AWS Regions and the AWS GovCloud (US) Regions. AWS Control Tower offers the easiest way to set up and govern a secure, multi-account AWS environment. It simplifies AWS experiences by orchestrating multiple AWS services on your behalf while maintaining the security and compliance needs of your organization. You can set up a multi-account AWS environment within 30 minutes or less, govern new or existing account configurations, gain visibility into compliance status, and enforce controls at scale.&amp;nbsp;&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 17:02:40 +0000</pubDate>
+            <category>general:products/aws-control-tower,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-i4i-instances-europe-zurich-region/</link>
+            <guid isPermaLink="false">2cb3ff51d5249c21d2c0c14589fa6cda51b51416</guid>
+            <title>Amazon EC2 I4i instances are now available in Europe (Zurich) Region</title>
+            <description>&lt;p&gt;Starting today, storage optimized Amazon EC2 I4i instances are now also available in Europe (Zurich) Region. Amazon EC2 I4i instances are powered by 3rd generation Intel Xeon Scalable processors (Ice Lake) and deliver the highest local storage performance within Amazon EC2 using AWS Nitro NVMe SSDs. &lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 18:26:10 +0000</pubDate>
+            <category>marketing:marchitecture/storage,general:products/amazon-ec2</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-guardduty-cluster-configurability-eks-monitoring/</link>
+            <guid isPermaLink="false">75f3a91a2bc4841a597ae1d4c28b39fb9b034435</guid>
+            <title>Amazon GuardDuty introduces cluster configurability in EKS Runtime Monitoring</title>
+            <description>&lt;p&gt;&lt;a href="/guardduty/" target="_blank" rel="noopener"&gt;Amazon GuardDuty&lt;/a&gt; announces a new capability in &lt;a href="https://docs.aws.amazon.com/guardduty/latest/ug/eks-protection-configuration-key-concepts.html#eksrunmon-selective-eks-clusters-with-tags" target="_blank" rel="noopener"&gt;GuardDuty EKS Runtime Monitoring&lt;/a&gt; that allows you to selectively configure which Amazon Elastic Kubernetes Service (Amazon EKS) clusters are to be monitored for threat detection. Previously, configurability was at the account level only. With this added cluster-level configurability, customers can now selectively monitor EKS clusters for threat detection or continue to use account level configurability to monitor all EKS clusters in a given account and region.&amp;nbsp;&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 16:58:36 +0000</pubDate>
+            <category>general:products/amazon-guardduty,general:products/amazon-eks,marketing:marchitecture/containers,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-glue-streaming-data-streams-fan-out-feature/</link>
+            <guid isPermaLink="false">4d0413e060b0c7493e6cfbd4fa697909fb6edda3</guid>
+            <title>AWS Glue Streaming now supports Kinesis Data Streams enhanced fan-out feature</title>
+            <description>&lt;p&gt;AWS Glue Streaming ETL now supports the Amazon Kinesis Data Streams (KDS) enhanced fan-out feature for Kinesis event sources. Enhanced fan-out allows developers to scale up the number of stream consumers (applications reading data from a stream in real-time) by offering each stream consumer its own read throughput.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 17:02:21 +0000</pubDate>
+            <category>general:products/aws-glue,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-managed-iam-policies-rosa-control-planes/</link>
+            <guid isPermaLink="false">e63b0de7accdf26550a9eb33315933595c2355c4</guid>
+            <title>Announcing AWS managed IAM policies for ROSA with hosted control planes</title>
+            <description>&lt;p&gt;Today, we announce the introduction of 11 new AWS managed policies for Red Hat OpenShift Service on AWS (ROSA) with hosted control planes (HCP), which is now in Technology Preview. The AWS managed policies provide narrowly-scoped permissions for the IAM roles that ROSA uses to manage your cluster infrastructure, and ensure that these permissions stay up-to-date with new OpenShift versions.&lt;/p&gt;</description>
+            <pubDate>Thu, 14 Sep 2023 21:58:16 +0000</pubDate>
+            <category>general:products/rosa,marketing:marchitecture/containers</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-block-public-access-machine-images/</link>
+            <guid isPermaLink="false">fe705878dbd3c4f6785f6ff33e521c5a1cda32c8</guid>
+            <title>Amazon EC2 now supports Block Public Access for Amazon Machine Images</title>
+            <description>&lt;p&gt;Amazon EC2 now supports AMI Block Public Access (BPA), an account-wide setting that allows customers to block public sharing of Amazon Machine Images (AMIs) in a region. Customers managing AMIs at-scale now have a simple and proactive way of safeguarding their AMIs from inadvertent access by unauthorized users.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 18:13:50 +0000</pubDate>
+            <category>general:products/amazon-ec2,general:products/aws-govcloud-us,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/post-launch-actions-framework-aws-elastic-disaster-recovery/</link>
+            <guid isPermaLink="false">d5cdcedc9ad664153372aa194e11769604e30954</guid>
+            <title>Announcing post-launch actions framework for AWS Elastic Disaster Recovery</title>
+            <description>&lt;p&gt;AWS Elastic Disaster Recovery&amp;nbsp;(AWS DRS) now allows you to define actions that run automatically after launching recovery instances, empowering you to automate any action you need to run after an instance has successfully launched.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 17:01:30 +0000</pubDate>
+            <category>general:products/aws-elastic-disaster-recovery,marketing:marchitecture/storage</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/api-gateway-console-refresh/</link>
+            <guid isPermaLink="false">5fa52477cdd9256fde365fb78e39c32107259c45</guid>
+            <title>Announcing API Gateway console refresh</title>
+            <description>&lt;p&gt;Today, Amazon API Gateway announces a console experience refresh with usability improvements to REST and WebSocket API workflows, accessibility enhancements, and dark mode support.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 21:40:30 +0000</pubDate>
+            <category>general:products/amazon-api-gateway,marketing:marchitecture/networking,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-elastic-disaster-recovery-israel-tel-aviv/</link>
+            <guid isPermaLink="false">6935bbb3142cc0d051c4e88cf3abfa57a441f9b5</guid>
+            <title>AWS Elastic Disaster Recovery is now available in Israel (Tel Aviv)</title>
+            <description>&lt;p&gt;Starting today, AWS Elastic Disaster Recovery (DRS) is available in Israel (Tel Aviv) region.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 17:27:29 +0000</pubDate>
+            <category>general:products/aws-elastic-disaster-recovery,marketing:marchitecture/storage</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-appsync-websockets-subscriptions-nested-filtering/</link>
+            <guid isPermaLink="false">c007de0926bce8091181fde138b9eb748d8a7893</guid>
+            <title>AWS AppSync WebSockets-based subscriptions for real-time updates support nested filtering</title>
+            <description>&lt;p&gt;AWS AppSync is a fully managed service that enables developers to build digital experiences based on real-time data. With AppSync, you can configure data sources to push and publish real-time data updates to subscribed clients. AppSync handles connection management, scalability, fan-out and broadcasting, allowing you to focus on your application business needs instead of managing complex infrastructure. With AppSync, developers can easily specify filtering roles for their subscriptions to target specific connected clients based on the published data.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 17:25:33 +0000</pubDate>
+            <category>general:products/aws-appsync,marketing:marchitecture/mobile-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-emr-eks-linux-2023/</link>
+            <guid isPermaLink="false">0d236aeb0d7887be31ebf1f0039d7be5b28ecc29</guid>
+            <title>Amazon EMR on EKS now supports Amazon Linux 2023</title>
+            <description>&lt;p&gt;We are excited to announce support for &lt;a href="/linux/amazon-linux-2023/" target="_blank" rel="noopener"&gt;Amazon Linux 2023&lt;/a&gt; (AL2023) on &lt;a href="/emr/features/eks/" target="_blank" rel="noopener"&gt;Amazon EMR on EKS&lt;/a&gt;.&amp;nbsp;Customers can now use AL2023 as the operating system together with Java 17 as Java runtime to run Spark workloads on Amazon EMR on EKS. This provides customers a secure, stable, high-performance environment to develop and run their applications as well as enables them to access the latest enhancements such as kernel, toolchain, glibc, openssl and other system libraries and utilities.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 18:04:09 +0000</pubDate>
+            <category>general:products/amazon-emr,general:products/aws-govcloud-us,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/knowledge-base-amazon-bedrock-models-data-sources/</link>
+            <guid isPermaLink="false">43cadaf2ed40683d78eb531fc503bd354318a07f</guid>
+            <title>Knowledge base for Amazon Bedrock connects foundation models to your data sources</title>
+            <description>&lt;p&gt;Today, we are announcing knowledge base for Amazon Bedrock in preview that lets you connect your organization’s private data sources to foundation models (FMs) to enable retrieval augmented generation in your generative AI applications to deliver more relevant and contextual FM responses.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 17:30:35 +0000</pubDate>
+            <category>general:products/amazon-machine-learning,marketing:marchitecture/artificial-intelligence,general:products/amazon-bedrock</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-marketplace-self-service-listing-saas/</link>
+            <guid isPermaLink="false">881cd1cf640096f256fa8158bbd89f02bd45b7ba</guid>
+            <title>AWS Marketplace introduces new self-service listing feature for SaaS products </title>
+            <description>&lt;p&gt;AWS Marketplace now features a new self-service listing experience in the AWS Marketplace Management Portal for SaaS products. The new feature enables AWS Marketplace sellers to publish and update SaaS listings more quickly and easily. This feature enables you to directly interact with AWS Marketplace catalog to create, preview, test, and update your product listing without needing AWS Marketplace to manually process your inputs.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 19:55:03 +0000</pubDate>
+            <category>general:products/aws-marketplace,marketing:marchitecture/aws-marketplace-and-partners</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-opensearch-serverless-auto-scaling-query-rates/</link>
+            <guid isPermaLink="false">9629f667f7dcb3c482969e6bbf2086d8c96ad5ad</guid>
+            <title>Amazon OpenSearch Serverless extends auto-scaling to handle high query rates</title>
+            <description>&lt;p&gt;We are excited to announce that &lt;a href="/opensearch-service/features/serverless/" target="_blank" rel="noopener"&gt;Amazon OpenSearch Serverless&lt;/a&gt;&amp;nbsp;has expanded its auto-scaling capabilities to efficiently handle tens of thousands of query transactions per minute. With this new feature, you can rely on OpenSearch Serverless to help handle unpredictable surges in your search and query traffic.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 18:12:39 +0000</pubDate>
+            <category>general:products/amazon-opensearch-service,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-outbound-campaigns-europe-frankfurt-region/</link>
+            <guid isPermaLink="false">bfa3580d46798f26689d2e52ffeea2c6a94bcde1</guid>
+            <title>Amazon Connect outbound campaigns is now generally available in the Europe (Frankfurt) Region</title>
+            <description>&lt;p&gt;Amazon Connect now supports outbound campaigns in the Europe (Frankfurt) &lt;a href="/about-aws/global-infrastructure/regional-product-services/" target="_blank" rel="noopener"&gt;AWS region&lt;/a&gt; making it easier to proactively communicate across voice, SMS, and email for use cases such as delivery notifications, marketing promotions, appointment reminders, or debt collection. Communication capabilities include features such as point-of-dial checks, calling controls for time of day, time zone, number of attempts per contact, and predictive dialing with integrated voicemail detection. A list management capability provided by Amazon Pinpoint can also be used to build customer journeys and multi-channel user contact experiences. With this launch, high-volume outbound calls can now be made to customers in the United Kingdom, Italy and Spain from Amazon Connect instances located in Europe (Frankfurt) or Europe (London) AWS regions. Outbound campaigns can be enabled within the AWS Connect Console.&lt;/p&gt;</description>
+            <pubDate>Wed, 13 Sep 2023 18:22:05 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/messaging</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/memory-optimized-amazon-ec2-r7a-instances/</link>
+            <guid isPermaLink="false">184cba4d6a2c55c4e12558ec5fbe283ff961b583</guid>
+            <title>Announcing memory optimized Amazon EC2 R7a instances</title>
+            <description>&lt;p&gt;AWS announces the general availability of Amazon EC2 R7a instances. R7a instances, powered by 4th Gen AMD EPYC processors (code-named Genoa) with a maximum frequency of 3.7GHz, deliver up to 50% higher performance compared to R6a instances.&amp;nbsp;&amp;nbsp;&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Tue, 12 Sep 2023 22:21:22 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-iam-identity-center-session-duration-limit-increases/</link>
+            <guid isPermaLink="false">3e122e4d9fcff3624876b6d8637bd402f3953346</guid>
+            <title>AWS IAM Identity Center session duration limit increases from 7 to 90 days</title>
+            <description>&lt;p&gt;AWS IAM Identity Center administrators can now configure the access portal session duration to last up to 90 days. The session duration limit defines how long signed-in users can access the AWS access portal and Identity Center enabled applications before being prompted to re-authenticate. &lt;/p&gt;</description>
+            <pubDate>Tue, 12 Sep 2023 17:04:45 +0000</pubDate>
+            <category>general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/custom-notifications-aws-chatbot/</link>
+            <guid isPermaLink="false">e93103eb767d6385cd6161406b881ba1370e5d92</guid>
+            <title>Custom notifications are now available for AWS Chatbot</title>
+            <description>&lt;p&gt;Today, AWS announces the general availability of custom notifications in AWS Chatbot. Customers can use AWS Chatbot custom notifications to define and add additional information in the notifications to monitor the health and performance of their AWS applications in Microsoft Teams and Slack channels.&amp;nbsp;&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Tue, 12 Sep 2023 20:50:05 +0000</pubDate>
+            <category>general:products/aws-chatbot,general:products/amazon-simple-notification-service,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-redshift-cross-region-data-sharing-support-aws-lake-formation/</link>
+            <guid isPermaLink="false">7b9e25b71953071552dc58966e5f4985a105fa62</guid>
+            <title>Amazon Redshift announces cross-region data sharing support through AWS Lake Formation</title>
+            <description>&lt;p&gt;&lt;a href="/redshift/" target="_blank" rel="noopener"&gt;Amazon Redshift&lt;/a&gt; enables you to use &lt;a href="/lake-formation/" target="_blank" rel="noopener"&gt;AWS Lake Formation&lt;/a&gt; to&amp;nbsp;centrally manage permissions on data being shared across your organization. Amazon Redshift already supports sharing live data across AWS regions. Amazon Redshift now supports cross-region data sharing via AWS Lake Formation so you can centrally define AWS Lake Formation permissions of Amazon Redshift datashares and restrict user access to objects within a datashare.&lt;/p&gt;</description>
+            <pubDate>Tue, 12 Sep 2023 18:15:54 +0000</pubDate>
+            <category>general:products/amazon-redshift,marketing:marchitecture/analytics,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/cost-anomaly-detection-custom-monitor-limit-500/</link>
+            <guid isPermaLink="false">882dcb5e9fdaf0bb140e65600c4488fccc8fb25c</guid>
+            <title>Cost Anomaly Detection increases custom anomaly monitor limit to 500</title>
+            <description>&lt;p&gt;&lt;a href="/aws-cost-management/aws-cost-anomaly-detection/" target="_blank" rel="noopener"&gt;Cost Anomaly Detection&lt;/a&gt; uses&amp;nbsp;machine learning to continuously monitor, detect, and alert customers of anomalous spent pattern. Starting today, Cost Anomaly Detection users with a management account will be able to create up to 500 custom anomaly monitors to track spend in their account(s). A custom anomaly monitor allows a user to track AWS spend across either linked accounts, cost allocation tags, or cost categories.&lt;/p&gt;</description>
+            <pubDate>Tue, 12 Sep 2023 17:49:41 +0000</pubDate>
+            <category>general:products/aws-cost-explorer,general:products/cloud-financial-management,marketing:marchitecture/cost-management</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-documentdb-asia-pacific-hyderabad-region/</link>
+            <guid isPermaLink="false">9da9a8be4981d95b92c5a811a11a71d75daf9478</guid>
+            <title>Amazon DocumentDB is now available in the Asia Pacific (Hyderabad) region</title>
+            <description>&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Hyderabad) region adding to the &lt;a href="/about-aws/global-infrastructure/regional-product-services/" target="_blank" rel="noopener"&gt;list of available regions where you can use Amazon DocumentDB&lt;/a&gt;.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 19:54:30 +0000</pubDate>
+            <category>general:products/amazon-documentdb,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-cases-author-name-comments/</link>
+            <guid isPermaLink="false">1d45c2382e866f9adc1dd718f9b70218cae73e11</guid>
+            <title>Amazon Connect Cases now includes author name on comments</title>
+            <description>&lt;p&gt;Amazon Connect Cases now supports displaying the author name for comments that are written on cases. By seeing who added comments to a case, you can more easily track who contributed to the resolution of the case and enable your team to collaborate more effectively.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 21:44:30 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/business-productivity</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-postgresql-multi-az-deployment-readable-standbys-major-version-upgrades/</link>
+            <guid isPermaLink="false">40d1b637959ca227a2078f796f3fedacf923574c</guid>
+            <title>Amazon RDS for PostgreSQL Multi-AZ Deployment with two readable standbys now supports major version upgrades</title>
+            <description>&lt;p&gt;&lt;a href="/rds/features/multi-az/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (Amazon RDS) PostgreSQL Multi-AZ Deployments with two readable standbys&lt;/a&gt; now supports major version upgrades. Starting today, you can upgrade your RDS for PostgreSQL Multi-AZ Deployments with two readable standbys from major version 13.4 and above and 14.5 and above to 15.4 with just a few clicks on the AWS Management Console.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 17:42:43 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-elemental-link-uhd-live-video-contribution-mediaconnect/</link>
+            <guid isPermaLink="false">38c70e2604999ecf20fbfcef605c23b38b085102</guid>
+            <title>AWS Elemental Link UHD simplifies live video contribution with MediaConnect</title>
+            <description>&lt;p&gt;You can now use &lt;a href="/elemental-link/" target="_blank" rel="noopener"&gt;AWS Elemental Link UHD&lt;/a&gt; to directly contribute live video to &lt;a href="/mediaconnect/" target="_blank" rel="noopener"&gt;AWS Elemental MediaConnect&lt;/a&gt;, a reliable, secure, and flexible transport service for live video. With MediaConnect, you can build live video workflows and securely share high-value live content globally with your partners and customers.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 21:13:29 +0000</pubDate>
+            <category>marketing:marchitecture/media-services,general:products/aws-elemental-medialive,general:products/aws-elemental-mediaconnect</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-cases-attachments/</link>
+            <guid isPermaLink="false">4b475dd99e6dfb16ba42412a640e18932101d3c2</guid>
+            <title>Amazon Connect Cases now supports attachments</title>
+            <description>&lt;p&gt;Amazon Connect Cases now supports uploading attachments to a case, enabling agents to have the information they need at their fingertips in order to resolve cases. Attaching files to a case helps ensure your agents don’t lose track of critical context and information for a customer issue, improving agent productivity and customer satisfaction.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 21:38:47 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/business-productivity</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-contact-data-updated-event/</link>
+            <guid isPermaLink="false">09e5c7045a8f410e11124af7f87787980cfea005</guid>
+            <title>Amazon Connect launches Contact Data Updated event </title>
+            <description>&lt;p&gt;Amazon Connect provides a new event for updates to contact (voice call, chat, and task) attributes. This new event will notify customers in two scenarios: 1) when there is an update to the scheduled timestamp of a task, and 2) when there is an update to a contact’s user-defined attributes. As an example, customers can use this event to update an analytics dashboard that monitors task scheduling changes in real-time.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 17:55:54 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/business-productivity,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-m6id-r6id-database-instances/</link>
+            <guid isPermaLink="false">78bc05bf54f0af43b49b1f0b4636defc40e77d0b</guid>
+            <title>Amazon RDS now supports M6id and R6id database instances</title>
+            <description>&lt;p&gt;&lt;a href="/rds/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (Amazon RDS)&lt;/a&gt; now&amp;nbsp;supports M6id and R6id database (DB) instances for RDS for PostgresSQL, MySQL, and MariaDB. Amazon RDS M6id and R6id DB instances provide up to a 24% performance improvement and up to a 13% price/performance improvement (based on on-demand pricing) over Amazon RDS M5d and R5d DB instances for open-source databases depending on database engine, version, and workload. These instances support local block storage with up to 7.6 TB of NVMe-based solid state disk (SSD) storage.&lt;/p&gt;</description>
+            <pubDate>Mon, 11 Sep 2023 18:05:18 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/rosa-europe-spain-region/</link>
+            <guid isPermaLink="false">47b651e04eb82c55953ffcd9cd99eaf133d7c803</guid>
+            <title>ROSA now available in the Europe (Spain) Region</title>
+            <description>&lt;p&gt;Red Hat OpenShift Service on AWS (ROSA) is now available in the Europe (Spain) Region. Starting today, you can enable ROSA from the AWS Console and launch ROSA clusters in the Europe (Spain) Region.&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 21:41:28 +0000</pubDate>
+            <category>general:products/rosa,marketing:marchitecture/compute,marketing:marchitecture/containers</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-connect-apis-programmatically-configure-views-guides/</link>
+            <guid isPermaLink="false">1e34deee6041a72d57d710afd3c01746086daf92</guid>
+            <title>Amazon Connect launches APIs to programmatically configure views in step-by-step guides</title>
+            <description>&lt;p&gt;Amazon Connect now provides APIs to programmatically create and manage view resources used in step-by-step guides. View resources define what gets displayed in your agent’s UI during a step-by-step guide. With this launch, you are able to define static and dynamic content in a view, including layouts and style, which enables you to help control the look and feel of your agent’s experience. Additionally, these APIs support AWS CloudTrail, AWS CloudFormation, and tagging. To learn more about the new view resource APIs, see the &lt;a href="https://docs.aws.amazon.com/connect/latest/APIReference/view-api.html" target="_blank" rel="noopener"&gt;Amazon Connect API reference guide&lt;/a&gt;, the &lt;a href="https://docs.aws.amazon.com/connect/latest/adminguide/view-resources-sg.html" target="_blank" rel="noopener"&gt;Amazon Connect administrator guide&lt;/a&gt;, and the &lt;a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Connect.html" target="_blank" rel="noopener"&gt;Amazon Connect resource type reference&lt;/a&gt; in the AWS CloudFormation user guide.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 16:59:15 +0000</pubDate>
+            <category>general:products/amazon-connect,marketing:marchitecture/business-productivity,marketing:marchitecture/messaging</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-route-53-managed-prefix-lists-health-checks/</link>
+            <guid isPermaLink="false">581b9a45341ca229dc0ebe9e621dfde4c7da96fb</guid>
+            <title>Amazon Route 53 now supports AWS-managed prefix lists for health checks</title>
+            <description>&lt;p&gt;Starting today, AWS-managed prefix lists can be used for Amazon Route 53 health checks to simplify the process of limiting inbound traffic to only the IP addresses associated with Route 53 health check servers. These prefix lists are maintained by Route 53 and contain up-to-date IP ranges for Route 53 health check servers.&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 17:13:11 +0000</pubDate>
+            <category>general:products/amazon-route-53,marketing:marchitecture/networking-and-content-delivery,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ses-email-service-7-regions/</link>
+            <guid isPermaLink="false">af7435a358aea7651670d2fdf5a9dda2473f13a6</guid>
+            <title>Amazon SES email receiving service expands to 7 new regions</title>
+            <description>&lt;p&gt;Today we're thrilled to announce that Amazon Simple Email Service (SES) is expanding its email receiving capabilities to 7 new regions. This expansion provides businesses and developers who deal with a high volume of emails a robust solution for swift processing. As the email receiver, SES handles underlying mail-receiving operations, such as communication with other mail servers, scanning for spam and viruses, blocking mail from untrusted sources, and accepting mail for recipients in your domain.&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 19:57:23 +0000</pubDate>
+            <category>general:products/amazon-ses,marketing:marchitecture/business-productivity</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-nat-gateway-available-los-angeles-local-zone/</link>
+            <guid isPermaLink="false">f1d0654d7606fadc557fe6ba23f8658844ff646a</guid>
+            <title>AWS NAT Gateway is now available in the AWS Los Angeles Local Zone us-west-2-lax-1a</title>
+            <description>&lt;p&gt;AWS NAT Gateway is now available in the Los Angeles Local Zone us-west-2-lax-1a. AWS Local Zones is a type of AWS infrastructure deployment that places AWS compute, storage, database, and other select services closer to large population, industry, and IT centers where no AWS Region exists today.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 18:34:35 +0000</pubDate>
+            <category>marketing:marchitecture/networking-and-content-delivery,general:products/amazon-virtual-private-cloud,general:products/aws-local-zones</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-marketplace-published-events-notifications/</link>
+            <guid isPermaLink="false">e6b62ac7576da6d638aa7a31f611ee0139b190aa</guid>
+            <title>Get programmatic notifications for AWS Marketplace Offer Published events </title>
+            <description>&lt;p&gt;Today, AWS Marketplace announces general availability for programmatic notifications to communicate relevant details to buyers and partners once an AWS Marketplace offer is successfully created and available for subscription. With this launch, buyers and partners can use AWS EventBridge to quickly ingest, filter, transform, and deliver offer lifecycle events to build new applications quickly.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 21:53:18 +0000</pubDate>
+            <category>general:products/aws-marketplace,marketing:marchitecture/aws-marketplace-and-partners</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/iam-roles-last-used-accessed-information-aws-govcloud-regions/</link>
+            <guid isPermaLink="false">a8f86e7c096963197050e8b4b8027ec3524d5aac</guid>
+            <title>IAM roles last used and last accessed information available in AWS GovCloud (US) Regions</title>
+            <description>&lt;p&gt;IAM roles last used and IAM last accessed information are now available in the AWS GovCloud (US) Regions. IAM reports the latest timestamp when role credentials were used to make an AWS request. This information makes it easier for you to identify and remove unused roles. IAM also provides the latest timestamp when an IAM user or role used an action. You can use last accessed information to identify unused service and action-level permissions granted to your active roles and refine access for your workloads.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 17:07:59 +0000</pubDate>
+            <category>general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-iam</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-backup-amazon-aurora-continuous-backup/</link>
+            <guid isPermaLink="false">1d2d274190425e718a6370434433e75cc80a806f</guid>
+            <title>AWS Backup announces support for Amazon Aurora continuous backup</title>
+            <description>&lt;p&gt;Today, AWS Backup announces support for Amazon Aurora continuous backup, allowing specific point-in-time restore within customers' retention period of up to 35 days. AWS Backup is a fully managed service that centralizes and automates data protection across AWS services and hybrid workloads. With this launch, Aurora customers using AWS Backup can now restore their database to a specific time directly from their AWS Backup console or API/CLI.&lt;/p&gt;</description>
+            <pubDate>Fri, 08 Sep 2023 20:48:22 +0000</pubDate>
+            <category>general:products/aws-backup,general:products/amazon-aurora,marketing:marchitecture/databases,marketing:marchitecture/storage,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-security-hub-findings-consolidation-aws-govcloud-us-regions/</link>
+            <guid isPermaLink="false">b4f398be51e01b1a664a1a566b0b2c320b9c4b75</guid>
+            <title>AWS Security Hub now supports findings consolidation in the AWS GovCloud (US) Regions</title>
+            <description>&lt;p&gt;AWS announces the availability of control and finding consolidation capabilities in &lt;a href="/security-hub/" target="_blank" rel="noopener"&gt;AWS Security Hub&lt;/a&gt; in the AWS GovCloud (US-West and US-East) Regions. The consolidated controls view shows all security controls in one place. You can use it to help identify misconfigurations based on severity and number of failed resources, improve your overall security score, and configure each control across standards. This release also includes a matching set of APIs to &lt;a href="https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetSecurityControls.html" target="_blank" rel="noopener"&gt;obtain&lt;/a&gt;, &lt;a href="https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html" target="_blank" rel="noopener"&gt;list&lt;/a&gt;, and &lt;a href="https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html" target="_blank" rel="noopener"&gt;update&lt;/a&gt; security controls across standards.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 19:13:28 +0000</pubDate>
+            <category>general:products/aws-govcloud-us,general:products/aws-security-hub,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-custom-data-types-trusted-language-extensions-postgre-sql/</link>
+            <guid isPermaLink="false">d90771fc0c1b54b64b3811b058af0da237e639c7</guid>
+            <title>Amazon RDS now supports custom data types in Trusted Language Extensions for PostgreSQL</title>
+            <description>&lt;p&gt;Trusted Language Extensions for PostgreSQL now supports building your own custom data types and is available on &lt;a href="/rds/postgresql/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (RDS) for PostgreSQL&lt;/a&gt;. You can now use Trusted Language Extensions for PostgreSQL to create a new base (or scalar) data type, specify how it is stored, and define functions that support SQL and index operations for this new data type.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 17:21:52 +0000</pubDate>
+            <category>general:products/amazon-rds,general:products/aws-govcloud-us,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-sagemaker-quick-studio-setup-experience/</link>
+            <guid isPermaLink="false">5686f9d009db0507b9d7c2b6ff3dfa2bda27908e</guid>
+            <title>Amazon SageMaker now provides a new quick Studio setup experience</title>
+            <description>&lt;p&gt;Today, we are excited to announce the new quick Studio setup for Amazon SageMaker. This new quick setup allows you to create SageMaker Studio with default pre-sets in minutes for individual users.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 20:50:40 +0000</pubDate>
+            <category>general:products/amazon-sagemaker-studio,general:products/amazon-sagemaker,marketing:marchitecture/artificial-intelligence</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-step-functions-enhanced-error-handling/</link>
+            <guid isPermaLink="false">b2dccc2410a2420f3354c9ad0dfb508c1458d8b8</guid>
+            <title>AWS Step Functions launches enhanced error handling</title>
+            <description>&lt;p&gt;&lt;a href="/step-functions/" target="_blank" rel="noopener"&gt;AWS Step Functions&lt;/a&gt; announces the availability of enhanced error handling capabilities in your AWS Step Functions workflows to help you identify errors more clearly and provide you with fine-grained control over your retry strategies. AWS Step Functions is a visual workflow service capable of orchestrating 12,000+ API actions from over 220 AWS services to automate business processes and data processing workloads.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 21:40:58 +0000</pubDate>
+            <category>general:products/aws-step-functions,marketing:marchitecture/application-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/daily-disbursements-aws-marketplace-sellers/</link>
+            <guid isPermaLink="false">21bbcef1cbf73ef7216351dab02005a6c730ae3a</guid>
+            <title>Announcing daily disbursements for AWS Marketplace sellers</title>
+            <description>&lt;p&gt;AWS Marketplace now enables sellers to set disbursement preferences to receive their outstanding balances on a daily basis, granting increased flexibility. While AWS Marketplace sellers, including independent software vendors (ISVs) and Channel Partners, were previously limited to monthly disbursements on a specific day, now sellers can select between daily and monthly disbursements. For the monthly disbursement option, sellers can also select what day of the month they want to receive their disbursements.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 19:32:42 +0000</pubDate>
+            <category>general:products/aws-marketplace,marketing:marchitecture/aws-marketplace-and-partners,general:products/cloud-financial-management</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-fsx-netapp-ontap-managing-file-systems-ontap-cli/</link>
+            <guid isPermaLink="false">ac86626b5731a3ad147f3b45e960cdaf0e6c2cb8</guid>
+            <title>New Amazon FSx for NetApp ONTAP capabilities simplify managing file systems using ONTAP CLI</title>
+            <description>&lt;p&gt;Amazon FSx for NetApp ONTAP is announcing two additional capabilities that make it even easier for you to secure and audit access to your file systems: you can now create additional ONTAP file system administrator users for your file system and you can use Active Directory credentials to access the ONTAP CLI.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 17:10:17 +0000</pubDate>
+            <category>marketing:marchitecture/storage,general:products/amazon-fsx-netapp-ontap</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-r7iz-instances/</link>
+            <guid isPermaLink="false">8b8a8ffaa8e692fd6102cc990a7ae536accd0086</guid>
+            <title>Introducing Amazon EC2 R7iz instances</title>
+            <description>&lt;p&gt;Today, AWS announces the general availability of memory-optimized, high CPU performance Amazon Elastic Cloud Compute (Amazon EC2) R7iz instances. R7iz instances are the fastest 4th generation Intel Xeon Scalable-based (Sapphire Rapids) instances in the cloud with 3.9 GHz sustained all-core turbo frequency. They deliver up to 20% better performance than previous generation z1d instances. These instances are built on the &lt;a href="/ec2/nitro/" target="_blank" rel="noopener"&gt;AWS Nitro System&lt;/a&gt;. The Nitro System is a collection of AWS-designed hardware and software innovations that enables the delivery of efficient and flexible cloud services with enhanced security, isolated multi-tenancy, private networking, and fast local storage. R7iz instances are ideal for front-end Electronic Design Automation (EDA), relational databases with high per-core licensing fees, financial, actuarial, data analytics simulations, and other workloads requiring a combination of high compute performance and high memory footprint.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 19:28:52 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-detective-eks-investigations-workshop-studio/</link>
+            <guid isPermaLink="false">65777e3f836dedea3656750109b961827784da99</guid>
+            <title>Amazon Detective adds Amazon EKS security investigations to AWS Workshop Studio</title>
+            <description>&lt;p&gt;You can now learn how to use Amazon Detective to conduct security investigations for threats detected in Amazon Elastic Kubernetes Service (Amazon EKS) and AWS security findings in the latest Amazon Detective Workshop Studio. These new modules will help you understand how to dive deep quickly on container threats but also broaden your investigations to services beyond Amazon GuardDuty.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 20:18:28 +0000</pubDate>
+            <category>general:products/amazon-detective,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-kendra-web-crawler-dynamic-content/</link>
+            <guid isPermaLink="false">fb3aaceb896b91b1f0cf34496f893cac7df88dd2</guid>
+            <title>Amazon Kendra releases Web Crawler for dynamic content support</title>
+            <description>&lt;p&gt;&lt;a href="/kendra/" target="_blank" rel="noopener"&gt;Amazon Kendra&lt;/a&gt; is an&amp;nbsp;intelligent search service powered by machine learning, enabling organizations to provide relevant information to customers and employees, when they need it. Starting today, AWS customers can use the Amazon Kendra Web Crawler to index and search pages, including dynamic pages from web sites they have authorization to crawl from.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 19:27:17 +0000</pubDate>
+            <category>general:products/amazon-kendra,general:products/amazon-machine-learning,marketing:marchitecture/artificial-intelligence</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-elemental-mediaconnect-cloudwatch-metrics/</link>
+            <guid isPermaLink="false">5543a9617e7ecdee50a1401d979fc5207ee447d8</guid>
+            <title>AWS Elemental MediaConnect adds new Amazon CloudWatch metrics</title>
+            <description>&lt;p&gt;Starting today, &lt;a href="/mediaconnect/" target="_blank" rel="noopener"&gt;AWS Elemental MediaConnect&lt;/a&gt; has additional metrics for improved visibility into your video streams and upfront error detection. The new metrics indicate consecutive packet drops, consecutive packets not recovered, jitter, latency, and up time. You can easily monitor your live video stream source metrics in the AWS Management Console, via &lt;a href="/cloudwatch/" target="_blank" rel="noopener"&gt;Amazon CloudWatch&lt;/a&gt;, or via the API.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 20:23:05 +0000</pubDate>
+            <category>general:products/aws-elemental-mediaconnect,marketing:marchitecture/media-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-rds-mariadb-supports-new-minors/</link>
+            <guid isPermaLink="false">307910ceaafe86fd6c3a53674511c1763dbaa3d0</guid>
+            <title>Amazon RDS for MariaDB supports minors 10.11.5, 10.6.15, 10.5.22, 10.4.31</title>
+            <description>&lt;p&gt;&lt;a href="/rds/mariadb/" target="_blank" rel="noopener"&gt;Amazon Relational Database Service (Amazon RDS) for MariaDB&lt;/a&gt; now supports MariaDB minor versions 10.11.5, 10.6.15, 10.5.22 and 10.4.31. We recommend that you upgrade to the latest minor versions to fix known security vulnerabilities in prior versions of MariaDB, and to benefit from the bug fixes, performance improvements, and new functionality added by the MariaDB community.&lt;/p&gt;</description>
+            <pubDate>Thu, 07 Sep 2023 21:16:27 +0000</pubDate>
+            <category>general:products/amazon-rds,marketing:marchitecture/databases</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-backup-resource-exclusion-aws-cloudformation-stack/</link>
+            <guid isPermaLink="false">3a87bf9cbf528a1aafda1649423194588a30eb94</guid>
+            <title>AWS Backup launches resource exclusion for AWS CloudFormation stack</title>
+            <description>&lt;p&gt;Today, AWS Backup announces support for AWS CloudFormation resource exclusion, allowing you to exclude resources from your application backups. AWS Backup is a fully managed service that centralizes and automates data protection across AWS services and hybrid workloads. Now, when assigning resources to backup plans, you can exclude specific resources within your CloudFormation stacks, optimizing cost on non-critical resources.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 18:52:00 +0000</pubDate>
+            <category>general:products/aws-backup,general:products/aws-cloudformation,general:products/aws-govcloud-us,marketing:marchitecture/storage</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-cloudwatch-logs-regular-expression-filter-pattern-syntax-support/</link>
+            <guid isPermaLink="false">421a68a2939a34edad5ae0fe9d970059e4d3d081</guid>
+            <title>Amazon CloudWatch Logs announces regular expression filter pattern syntax support</title>
+            <description>&lt;p&gt;We are excited to announce regular expression support for Amazon CloudWatch Logs filter pattern syntax, making it easier to search and match relevant logs. Customers use filter pattern syntax today to search logs, extract metrics using metric filters, and send specific logs to other destinations with subscription filters. With today’s launch, customers will be able to further customize these operations to meet their needs with flexible and powerful regular expressions within filter patterns. Now customers can define one filter to match multiple IP subnets or HTTP status codes using a regular expression such as ‘{ $.statusCode=%4[0-9]{2}% }’ rather than having to define multiple filters to cater to each variation, reducing the configuration and management overhead on their logs.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 19:01:51 +0000</pubDate>
+            <category>general:products/amazon-cloudwatch-logs,general:products/amazon-cloudwatch,marketing:marchitecture/management-and-governance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-location-service-aws-govcloud-us-west-region/</link>
+            <guid isPermaLink="false">5faa6ef3d6ce60dfd15ec329bb05102a795d05ad</guid>
+            <title>Amazon Location Service is now available in AWS GovCloud (US-West) Region</title>
+            <description>&lt;p&gt;Today, we are announcing the availability of Amazon Location Service in the AWS GovCloud (US-West) Region. Amazon Location Service is a location-based service that helps developers easily and securely add maps, points of interest, geocoding, routing, tracking, and geofencing to their applications without compromising on data quality, user privacy, or cost. With Amazon Location Service, you retain control of your location data, protecting your privacy and reducing enterprise security risks. Amazon Location Service provides a consistent API across commercial location-based service data providers (Esri and HERE), as well as popular open data source OpenStreetMap, all managed through one AWS console.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 21:02:14 +0000</pubDate>
+            <category>general:products/amazon-location-service,general:products/aws-govcloud-us,marketing:marchitecture/mobile-services,marketing:marchitecture/internet-of-things</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-waf-bot-control-protects-against-distributed-proxy-based-attacks/</link>
+            <guid isPermaLink="false">0c5da28d989c9e2be59e2535d483c94eee2d7492</guid>
+            <title>AWS WAF Bot Control now protects against distributed proxy-based attacks</title>
+            <description>&lt;p&gt;AWS WAF Bot Control for Targeted Bots now offers predictive Machine Learning (ML) technology to provide protection against distributed, proxy-based attacks. &lt;a href="https://aws.amazon.com/about-aws/whats-new/2022/10/aws-waf-challenge-rule-action-bot-control-targeted-bots/" target="_blank" rel="noopener"&gt;AWS WAF previously launched AWS Bot Control for Targeted Bots&lt;/a&gt; which provides protection against sophisticated bots that attempt to evade detection. Now, AWS WAF Bot Control for Targeted Bots can also be used to define block, challenge and Captcha rules against distributed bot attacks, such as attacks using residential and mobile proxies.&lt;br&gt; &lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 21:20:02 +0000</pubDate>
+            <category>general:products/aws-waf,marketing:marchitecture/security-identity-and-compliance</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-c6id-instances-aws-europe-london-region/</link>
+            <guid isPermaLink="false">453a1a5b1b268017a7becd6e70035887b058ddfd</guid>
+            <title>Amazon EC2 C6id instances are now available in AWS Europe (London) Region</title>
+            <description>&lt;p&gt;Starting today, Amazon EC2 C6id instances are available in the AWS Europe (London) Region. C6id instances are powered by 3rd generation Intel Xeon Scalable Ice Lake processors with an all-core turbo frequency of 3.5 GHz and up to 7.6 TB of local NVMe-based SSD block-level storage.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 21:57:49 +0000</pubDate>
+            <category>marketing:marchitecture/compute,general:products/amazon-ec2</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-sagemaker-inference-multi-model-endpoints-pytorch/</link>
+            <guid isPermaLink="false">2594123739e442e6be9e775d4511c28e2a4646fe</guid>
+            <title>Amazon SageMaker Inference now supports Multi Model Endpoints for PyTorch</title>
+            <description>&lt;p&gt;SageMaker &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-endpoints.html" target="_blank" rel="noopener"&gt;Multi-Model Endpoint (MME)&lt;/a&gt; is&amp;nbsp;a fully managed capability that allows customers to deploy 1000s of models on a single SageMaker endpoint and reduce costs. Until today, MME was not supported for PyTorch models deployed using &lt;a href="https://github.com/aws/deep-learning-containers/blob/master/available_images.md#sagemaker-framework-containers-sm-support-only" target="_blank" rel="noopener"&gt;TorchServe&lt;/a&gt;. Now,&amp;nbsp;customers can use MME to deploy 1000s of&amp;nbsp;PyTorch models using TorchServe to reduce inference costs.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 21:19:52 +0000</pubDate>
+            <category>general:products/amazon-sagemaker,general:products/amazon-machine-learning,marketing:marchitecture/artificial-intelligence</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-msk-israel-tel-aviv-region/</link>
+            <guid isPermaLink="false">42b2829498c26db240c40e9cde18cacfe47c4246</guid>
+            <title>Amazon MSK is now available in Israel (Tel Aviv) Region</title>
+            <description>&lt;p&gt;Amazon Managed Streaming for Apache Kafka (&lt;a href="/msk/" target="_blank" rel="noopener"&gt;Amazon MSK&lt;/a&gt;) is now available in Israel (Tel Aviv) Region. Amazon MSK is a fully managed service for Apache Kafka and Kafka Connect that makes it easier for you to build and run applications that use Apache Kafka as a data store. Amazon MSK is fully compatible with Apache Kafka, which enables you to more quickly migrate your existing Apache Kafka workloads to Amazon MSK with confidence or build new ones from scratch. With Amazon MSK, you spend more time building innovative streaming applications and less time managing Kafka clusters.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 16:54:38 +0000</pubDate>
+            <category>general:products/amazon-msk,marketing:marchitecture/analytics</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-m6i-r6i-instances-europe-zurich-region/</link>
+            <guid isPermaLink="false">fe59e7cb49a3f3f036ebf962ffcf157d69912a07</guid>
+            <title>Amazon EC2 M6i and R6i instances are now available in Europe (Zurich) region</title>
+            <description>&lt;p&gt;Starting today, &lt;a href="/ec2/" target="_blank" rel="noopener"&gt;Amazon Elastic Compute Cloud (Amazon EC2)&lt;/a&gt; M6i and R6i instances are available in AWS Europe (Zurich) region. These instances are built on &lt;a href="/ec2/nitro/" target="_blank" rel="noopener"&gt;AWS Nitro System&lt;/a&gt;, a collection of AWS designed hardware and software innovations that enables the delivery of efficient, flexible, and secure cloud services with isolated multi-tenancy, private networking, and fast local storage. Amazon EC2 M6i and R6i instances are powered by 3rd Generation Intel Xeon Scalable processors (code named Ice Lake) with an all-core turbo frequency of 3.5 GHz. They offer up to 50 Gbps of network bandwidth and up to 40 Gbps of bandwidth to the &lt;a href="/ebs/" target="_blank" rel="noopener"&gt;Amazon Elastic Block Store (Amazon EBS)&lt;/a&gt;.&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 19:04:36 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-c6gd-r6gd-instances-govcloud-west-region/</link>
+            <guid isPermaLink="false">413013d83c8bd8afeeea97b19e3035b2a6cd3bec</guid>
+            <title>Amazon EC2 C6gd and R6gd instances are now available in AWS GovCloud (US-West) Region</title>
+            <description>&lt;p&gt;Starting today, Amazon EC2 C6gd and R6gd instances powered by AWS Graviton2 processors are available in the AWS GovCloud (US-West) Region. These instances are powered by AWS Graviton2 processors and are built on the &lt;a href="/ec2/nitro/" target="_blank" rel="noopener"&gt;AWS Nitro System&lt;/a&gt;. The Nitro System is a collection of AWS designed hardware and software innovations that enables the delivery of efficient, flexible, and secure cloud services with isolated multi-tenancy, private networking, and fast local storage.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 18:42:42 +0000</pubDate>
+            <category>general:products/amazon-ec2,marketing:marchitecture/compute,general:products/aws-govcloud-us</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/vpc-dns-query-logging-five-regions/</link>
+            <guid isPermaLink="false">629a804b8ef7242db6904c25ba9d67e050aae099</guid>
+            <title>VPC DNS Query Logging now available in five new AWS Regions</title>
+            <description>&lt;p&gt;Today, we are announcing the availability of Route 53 Resolver Query Logging in the Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Europe (Spain), Europe (Zurich), and Middle East (UAE) Regions. Route 53 Resolver Query Logging enables you to log DNS queries that originate in your Amazon Virtual Private Clouds (Amazon VPCs). With query logging enabled, you can see which domain names have been queried, the AWS resources from which the queries originated - including source IP and instance ID - and the responses that were received.&amp;nbsp;&lt;/p&gt;</description>
+            <pubDate>Wed, 06 Sep 2023 16:57:16 +0000</pubDate>
+            <category>general:products/amazon-route-53,marketing:marchitecture/networking-and-content-delivery</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/amazon-ec2-high-memory-instances-asia-pacific-seoul-region/</link>
+            <guid isPermaLink="false">a7dcf14992d48015e4250d1b09d4e421ab8f80f3</guid>
+            <title>Amazon EC2 High Memory instances now available in Asia Pacific (Seoul) Region</title>
+            <description>&lt;p&gt;Starting today, &lt;a href="/ec2/instance-types/high-memory/" target="_blank" rel="noopener"&gt;Amazon EC2 High Memory instances&lt;/a&gt; with 9TiB of memory (u-9tb1.112xlarge) are now available in Asia Pacific (Seoul) Region. Customers can start using these new High Memory instances with On Demand and Savings Plan purchase options.&lt;/p&gt;</description>
+            <pubDate>Tue, 05 Sep 2023 20:12:11 +0000</pubDate>
+            <category>marketing:marchitecture/compute,general:products/amazon-ec2</category>
+            <author>aws@amazon.com</author>
+        </item>
+        <item>
+            <link>https://aws.amazon.com/about-aws/whats-new/2023/09/aws-trusted-advisor-new-fault-tolerance-check/</link>
+            <guid isPermaLink="false">967eb60cdfc8b980a2ae9da9a8de8fcc00361d35</guid>
+            <title>AWS Trusted Advisor adds 1 new fault tolerance check</title>
+            <description>&lt;p&gt;AWS Trusted Advisor now supports a new fault tolerance check for events that fail processing during asynchronous invocations with &lt;a href="/pm/lambda/" target="_blank" rel="noopener"&gt;AWS Lambda&lt;/a&gt;. AWS Trusted Advisor evaluates your AWS account with automated checks and provides cloud optimization recommendations to reduce costs, improve performance, increase security and fault tolerance, and monitor service quotas.&lt;/p&gt;</description>
+            <pubDate>Tue, 05 Sep 2023 17:25:09 +0000</pubDate>
+            <category>general:products/aws-trusted-advisor,general:products/aws-lambda,marketing:marchitecture/management-and-governance,marketing:marchitecture/networking,marketing:marchitecture/application-services</category>
+            <author>aws@amazon.com</author>
+        </item>
+    </channel>
+</rss>
