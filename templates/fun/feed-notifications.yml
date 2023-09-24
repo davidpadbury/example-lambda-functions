@@ -47,7 +47,12 @@ Resources:
                 Action:
                   - ssm:GetParameter
                   - ssm:PutParameter
-                Resource: !Ref LatestPublishedParameter
+                Resource:
+                  - !Sub
+                    - 'arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${ParameterName}'
+                    - ParameterName: !Ref LatestPublishedParameter
+
+
 
   FeedNotificationsDependenciesLambdaLayer:
     Type: 'AWS::Lambda::LayerVersion'
