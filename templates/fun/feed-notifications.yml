@@ -1,0 +1,77 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Chatbot Feed Notifications
+Parameters:
+  FeedUrl:
+    Type: String
+    Description: The URL of the feed to publish
+  NotificationsTopicArn:
+    Type: String
+    Description: ARN of the SNS topic to send Chatbot notifications
+
+Resources:
+  LatestPublishedParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: LatestPublishedTimestamp
+      Type: String
+      Value: ''
+      Description: Timestamp of the latest published feed entry
+
+  FeedNotificationsExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: FeedNotificationsExecutionRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: PublishNotificationToSns
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - sns:Publish
+                Resource: !Ref NotificationsTopicArn
+        - PolicyName: LatestPublishedParameterReadWrite
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ssm:GetParameter
+                  - ssm:PutParameter
+                Resource: !Ref LatestPublishedTimestamp
+
+  FeedNotificationsDependenciesLambdaLayer:
+    Type: 'AWS::Lambda::LayerVersion'
+    Properties:
+      LayerName: 'FeedNotificationsDependencies'
+      CompatibleRuntimes:
+        - 'python3.10'
+      Content:
+        S3Bucket: lambda-function-examples
+        S3Key: feed_notifications-dependencies.zip
+
+  FeedNotificationsFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: Trivia
+      Handler: index.lambda_handler
+      Runtime: python3.10
+      Role: !GetAtt FeedNotificationsExecutionRole.Arn
+      Environment:
+        Variables:
+          FEED_URL: !Ref FeedUrl
+          SNS_TOPIC_ARN: !Ref NotificationsTopicArn
+      Code:
+        S3Bucket: lambda-function-examples
+        S3Key: feed_notifications.zip
+      Layers:
+        - !Ref FeedNotificationsDependenciesLambdaLayer
