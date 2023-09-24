@@ -47,7 +47,7 @@ Resources:
                 Action:
                   - ssm:GetParameter
                   - ssm:PutParameter
-                Resource: !Ref LatestPublishedTimestamp
+                Resource: !Ref LatestPublishedParameter
 
   FeedNotificationsDependenciesLambdaLayer:
     Type: 'AWS::Lambda::LayerVersion'
