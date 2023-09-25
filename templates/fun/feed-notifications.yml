@@ -53,13 +53,14 @@ Resources:
                     - ParameterName: !Ref LatestPublishedParameter
 
 
-
   FeedNotificationsDependenciesLambdaLayer:
     Type: 'AWS::Lambda::LayerVersion'
     Properties:
       LayerName: 'FeedNotificationsDependencies'
       CompatibleRuntimes:
         - 'python3.10'
+      CompatibleArchitectures:
+        - x86_64
       Content:
         S3Bucket: lambda-function-examples
         S3Key: feed_notifications-dependencies.zip
@@ -67,9 +68,10 @@ Resources:
   FeedNotificationsFunction:
     Type: AWS::Lambda::Function
     Properties:
-      Handler: index.lambda_handler
+      Handler: lambda_function.lambda_handler
       Runtime: python3.10
       Role: !GetAtt FeedNotificationsExecutionRole.Arn
+      Timeout: 30
       Environment:
         Variables:
           FEED_URL: !Ref FeedUrl
@@ -80,3 +82,14 @@ Resources:
         S3Key: feed_notifications.zip
       Layers:
         - !Ref FeedNotificationsDependenciesLambdaLayer
+
+  CheckFeedRule:
+    Type: "AWS::Events::Rule"
+    Properties:
+      Description: "Trigger FeedNotifications"
+      ScheduleExpression: "rate(10 minutes)"
+      State: "ENABLED"
+      Targets:
+        -
+          Arn: !GetAtt FeedNotificationsFunction.Arn
+          Id: "RunFeedNotifications" 
