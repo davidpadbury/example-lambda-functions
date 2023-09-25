@@ -45,7 +45,7 @@ for app_dir in "$SRC_DIR"/* ; do
         source env/bin/activate
         pip install -r requirements.txt
         mkdir python
-        cp -r env/ python/
+        cp -R env/. python/.
         zip -r "$app_dependencies_archive" python
         zip "$app_archive" lambda_function.py
     )
