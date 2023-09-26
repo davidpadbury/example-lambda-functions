@@ -56,7 +56,7 @@ Resources:
   FeedNotificationsDependenciesLambdaLayer:
     Type: 'AWS::Lambda::LayerVersion'
     Properties:
-      LayerName: 'FeedNotificationsDependencies'
+      #LayerName: 'FeedNotificationsDependencies'
       CompatibleRuntimes:
         - 'python3.10'
       CompatibleArchitectures:
@@ -93,3 +93,11 @@ Resources:
         -
           Arn: !GetAtt FeedNotificationsFunction.Arn
           Id: "RunFeedNotifications" 
+
+  InvokeFeedNotificationsFunctionPermission:
+    Type: "AWS::Lambda::Permission"
+    Propeties:
+      FunctionName: !GetAtt FeedNotificationsFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt CheckFeedRule.Arn
