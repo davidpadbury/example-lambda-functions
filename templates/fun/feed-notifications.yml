@@ -12,7 +12,7 @@ Resources:
   LatestPublishedParameter:
     Type: AWS::SSM::Parameter
     Properties:
-      Name: LatestPublishedTimestamp
+      #Name: LatestPublishedTimestamp
       Type: String
       Value: '0'
       Description: Timestamp of the latest published feed entry
