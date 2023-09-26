@@ -110,3 +110,19 @@ To just return the generated response without the response object do:
     "embedResponse": false
 }
 ```
+
+## Fun Stuff
+
+### Feed Notifications
+
+Publish RSS/Atom feeds to Chat using [Chatbot Custom Notifications](https://docs.aws.amazon.com/chatbot/latest/adminguide/custom-notifs.html).
+
+![Feed Notifications Example](docs/FeedNotificationsExample.png)
+
+[Install](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://lambda-function-examples.s3.amazonaws.com/fun/feed-notifications.yml&stackName=FeedNotifications-YourFeedName)
+
+*Parameters*:
+ - `FeedUrl`: URL to the feed you want notifications for
+ - `NotificationsTopicArn`: Full ARN for the [SNS topic you've configured with AWS Chatbot](https://docs.aws.amazon.com/chatbot/latest/adminguide/subscribe-sns-topic.html) (e.g. `arn:aws:sns:us-east-1:123123123123:ChatbotNotifications`)
+
+By default feeds will be checked every 10 minutes. To have notifications for many feeds just install the stack for each feed (just make the stack name unique).
