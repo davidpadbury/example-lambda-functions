@@ -1,4 +1,5 @@
 from datetime import datetime
+from time import mktime
 from typing import Optional
 from dataclasses import dataclass
 from htmlslacker import HTMLSlacker
@@ -7,6 +8,9 @@ from time import sleep
 import json
 import feedparser
 import boto3
+
+
+ssm = boto3.client('ssm')
 
 
 @dataclass
@@ -21,7 +25,12 @@ def fetch_new_entries(feed_source: str, since_published_date: Optional[datetime]
     entries = sorted(feed.entries, key=lambda e: e.published_parsed)
     
     if since_published_date:
-        entries = list(filter(lambda e: e.published_parsed > since_published_date, entries))
+        entries = list(
+            filter(
+                lambda e: datetime.fromtimestamp(mktime(e.published_parsed)) > since_published_date, 
+                entries
+            )
+        )
 
     return NewEntries(
         entries=entries,
@@ -65,16 +74,47 @@ def publish_notifications(topic_arn: str, notifications: list[dict]):
         )
         # wait a tiny bit between each publish
         sleep(1)
+        
+
+def read_latest_entry(parameter_name: str) -> datetime:
+    response = ssm.get_parameter(Name=parameter_name)
+    value_text = response['Parameter']['Value']
+    latest_entry = datetime.utcfromtimestamp(int(float(value_text)))
+    return latest_entry
+    
+
+def write_latest_entry(parameter_name: str, value: datetime):
+    print(f'Writing latest entry: {value}')
+    value_text = str(value.timestamp())
+    ssm.put_parameter(
+        Name=parameter_name,
+        Value=str(value_text),
+        Type='String',
+        Overwrite=True
+    )
 
 
 def lambda_handler(event, context):
     feed = required_env('FEED_URL')
     topic_arn = required_env('SNS_TOPIC_ARN')
+    latest_entry_parameter = required_env('SSM_PARAM_LATEST_ENTRY')
 
-    new_entries = fetch_new_entries(feed)
+    last_latest_entry = read_latest_entry(latest_entry_parameter)
+    print(f'Looking for new entries from: {last_latest_entry}')
+    
+    new_entries = fetch_new_entries(feed, since_published_date=last_latest_entry)
     entries_to_publish = new_entries.entries[-3:]
 
     notifications = list(map(lambda e: create_notification(e, new_entries.feed), entries_to_publish))
+    
+    if len(entries_to_publish) > 0:
+        latest_entry = entries_to_publish[-1]
+        latest_entry_datetime = datetime.fromtimestamp(
+            mktime(
+                latest_entry.published_parsed
+            )
+        )
+        write_latest_entry(latest_entry_parameter, latest_entry_datetime)
 
     publish_notifications(topic_arn=topic_arn, notifications=notifications)
 
